@@ -8,7 +8,6 @@
 \usepackage{fixmath}
 \usepackage{multicol}
 \usepackage{answers}
-%\usepackage{luacode}
 \usepackage{icomma}
 \usepackage[pages=some]{background}
 \usepackage{siunitx}
@@ -19,7 +18,6 @@
 \usepackage[finnish]{babel}
  \usepackage{mathpazo}
 \usepackage{fouriernc}
-%\usepackage{xparse}
 \usepackage{microtype}
 
 \author{Joonas Mäkinen}
@@ -27,28 +25,28 @@
 
 \Newassociation{vastaus}{Vastaus}{ans}
 
-\newcounter{lauseke}
-\setcounter{lauseke}{0}
-\newcounter{kortteja} %mahdollisuus laittaa kolme varianttia lausekkeelle?
-\setcounter{kortteja}{0}
+\newcounter{expressions}
+\setcounter{expressions}{0}
+\newcounter{cards} %mahdollisuus laittaa kolme varianttia lausekkeelle?
+\setcounter{cards}{0}
 
-\newcommand\lauseke[2]{
+\newcommand\expression[2]{
 
-	\stepcounter{lauseke}
-	\stepcounter{kortteja}
+	\stepcounter{expressions}
+	\stepcounter{cards}
 
 	\vspace*{\fill}
 	\huge{\begin{center}$#2$\end{center}}
 	\vspace*{\fill}
 
-		\tiny{#1\arabic{lauseke}} \hfill	\logo \\
+		\tiny{#1\arabic{expressions}} \hfill	\logo \\
 	\clearpage
 }
 
-\newcommand\lausekek[3][1]{
+\newcommand\expressiong[3][1]{
 
-	\stepcounter{lauseke}
-	\stepcounter{kortteja}
+	\stepcounter{expressions}
+	\stepcounter{cards}
 
 	\vspace*{\fill}
 	\huge{\begin{center}
@@ -62,11 +60,11 @@
 	\end{center}}
 	\vspace*{\fill}
 
-		\tiny{#1\arabic{lauseke}} \hfill	\logo \\
+		\tiny{#1\arabic{expressions}} \hfill	\logo \\
 	\clearpage
 }
 
-\newcommand\tausta{
+\newcommand\background{
 		
 		\BgThispage
 		\tiny{
@@ -77,36 +75,36 @@
 	\clearpage
 }
 
-\newcommand\kortti[2]{
+\newcommand\card[2]{
 
-\stepcounter{luokka#1}
-\lauseke{#1}{#2}
-%\tausta	
+\stepcounter{class#1}
+\expression{#1}{#2}
+%\background	
 }
 
-\newcommand\korttik[3]{
+\newcommand\cardg[3]{
 
-\stepcounter{luokka#1}
-\lausekek{#1}{#2}{#3}
-%\tausta	
+\stepcounter{class#1}
+\expressiong{#1}{#2}{#3}
+%\background
 }
 
 
-%minne \begin{vastaus} \end{vastaus}
+%minne \begin{solution} \end{solution}
 	
-\newenvironment{kortit}[1]{
+\newenvironment{cards}[1]{
 
-\newcounter{luokka#1}
-\setcounter{luokka#1}{0}
+\newcounter{class#1}
+\setcounter{class#1}{0}
 		
-		\renewcommand\k[2]{
-			\kortti{#1}{##1}
-			\kortti{#1}{##2} %entä kaksipuolisten korttien versio?
+		\newcommand\pair[2]{
+			\card{#1}{##1}
+			\card{#1}{##2} %entä kaksipuolisten korttien versio?
 			}
-		\renewcommand\kk[3][1]{
-			\kortti{#1}{##1}
-			\korttik{#1}{##2}{##3} %entä kaksipuolisten korttien versio?
+		\newcommand\pairg[3][1]{
+			\card{#1}{##1}
+			\cardg{#1}{##2}{##3} %entä kaksipuolisten korttien versio?
 			}
 		}{
-\setcounter{lauseke}{0}
+\setcounter{expressions}{0}
 }

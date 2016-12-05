@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.8)  4 DEC 2016 12:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.8)  5 DEC 2016 15:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1525,8 +1525,8 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 \c@Vastaus=\count192
-\c@lauseke=\count193
-\c@kortteja=\count194
+\c@expressions=\count193
+\c@cards=\count194
 )
 (./custom.tex
 (/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1795,72 +1795,56 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Output from handle ans going to vast.tex
+Output from handle ans going to ans.tex
 \ans@file=\write4
-\openout4 = `vast.tex'.
+\openout4 = `ans.tex'.
 
-(./kortit.tex
-\c@luokkaL=\count281
-
-
-! LaTeX Error: \kk undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.260 \begin{kortit}{L}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+(./cards.tex
+\c@classA=\count281
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 19.28804pt on input line 269.
+(Font)              scaled to size 19.28804pt on input line 114.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 269.
+(Font)              scaled to size 13.39188pt on input line 114.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 269.
+(Font)              scaled to size 19.08076pt on input line 114.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 269.
+(Font)              scaled to size 13.24796pt on input line 114.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 269.
+(Font)              scaled to size 21.61124pt on input line 114.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 269.
+(Font)              scaled to size 15.0049pt on input line 114.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 269.
+(Font)              scaled to size 21.61124pt on input line 114.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 269.
+(Font)              scaled to size 15.0049pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 269.
+(Font)              scaled to size 19.08076pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 269.
+(Font)              scaled to size 13.24796pt on input line 114.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 4.64996pt on input line 269.
-<laakis-logo.png, id=4, 283.0575pt x 36.135pt>
+(Font)              scaled to size 4.64996pt on input line 114.
+ <laakis-logo.png, id=4, 283.0575pt x 36.135pt>
 File: laakis-logo.png Graphic file (type png)
- <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 269.
+
+<use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 114.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 
  []
 
 LaTeX Font Info:    Font shape `T1/fnc/m/sl' will be
-(Font)              scaled to size 9.29993pt on input line 269.
+(Font)              scaled to size 9.29993pt on input line 114.
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./laakis-logo.png>]
-\openout3 = `main.x.gnuplot'.
-
-runsystem(gnuplot main.x.gnuplot)...executed.
-
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 269.
+Package pdftex.def Info: laakis-logo.png used on input line 114.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 
  []
 
@@ -1869,241 +1853,402 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--269
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 270.
+Package pdftex.def Info: laakis-logo.png used on input line 116.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  []
 
 [3
 
 ]
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 270.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 270.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 270.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 270.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 270.
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in '-y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-
-! Package PGF Math Error: Unknown function `y' (in 'y=x^3-x').
-
-See the PGF Math package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \kk{y=x^3-x}{x**3-2*x}
-                            {2}
-(That was another \errmessage.)
-
-\openout3 = `main.x.gnuplot'.
-
-runsystem(gnuplot main.x.gnuplot)...executed.
-
 File: laakis-logo.png Graphic file (type png)
-<use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 270.
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 116.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  []
 
 [4
 
-]) [5
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 118.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+
+ []
+
+[5
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 118.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+
+ []
+
+[6
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 120.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+
+ []
+
+[7
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 120.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+
+ []
+
+[8
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 122.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+
+ []
+
+[9
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 122.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+
+ []
+
+[10
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 124.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+
+ []
+
+[11
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 124.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+
+ []
+
+[12
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 126.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+
+ []
+
+[13
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 126.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+
+ []
+
+[14
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 128.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+
+ []
+
+[15
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 128.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+
+ []
+
+[16
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 130.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+
+ []
+
+[17
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 130.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+
+ []
+
+[18
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 132.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+
+ []
+
+[19
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 132.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+
+ []
+
+[20
+
+]
+! Undefined control sequence.
+l.137 \pair
+           {3-3\cdot3}{-6}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.137 \pair{3-3\cdot
+                    3}{-6}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.137 \pair{3-3\cdot3}
+                      {-6}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.138 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.139 \pair
+           {3\cdot3-3}{6}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.139 \pair{3\cdot
+                  3-3}{6}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.139 \pair{3\cdot3-3}
+                      {6}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.140 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.141 \pair
+           {(3-3)\cdot3}{0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.141 \pair{(3-3)\cdot
+                      3}{0}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.141 \pair{(3-3)\cdot3}
+                        {0}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.142 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.143 \pair
+           {x-2(2x+4)}{-3x-8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.145 \pair
+           {2(2x-4)-x}{3x-8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.147 \pair
+           {2t-3t(x-t)\cdot 0}{2t}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.147 \pair{2t-3t(x-t)\cdot
+                            0}{2t}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.147 \pair{2t-3t(x-t)\cdot 0}
+                              {2t}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) [21
 
 ]
 No complaints by nag.
-(./main.aux) ) 
+(./main.aux) )
+(\end occurred inside a group at level 4)
+
+### simple group (level 4) entered at line 147 ({)
+### simple group (level 3) entered at line 141 ({)
+### simple group (level 2) entered at line 139 ({)
+### simple group (level 1) entered at line 137 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 23656 strings out of 493315
- 471095 string characters out of 6137905
- 498091 words of memory out of 5000000
- 26569 multiletter control sequences out of 15000+600000
- 43394 words of font info for 112 fonts, out of 8000000 for 9000
+ 23538 strings out of 493315
+ 468599 string characters out of 6137905
+ 497102 words of memory out of 5000000
+ 26462 multiletter control sequences out of 15000+600000
+ 39335 words of font info for 99 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 65i,8n,57p,485b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on main.pdf (5 pages, 26974 bytes).
+ 65i,5n,57p,485b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on main.pdf (21 pages, 35881 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 24618 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 19594 words of extra memory for PDF output out of 20736 (max. 10000000)
 
