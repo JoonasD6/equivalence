@@ -1,0 +1,41 @@
+% Muuta tiedostonimen paikalle oman lafkasi logo ja muokkaa tarvittaessa kokoa scale-parametrilla
+
+\newcommand\logo{\includegraphics*[scale=0.4]{laakis-logo.png}} %tasaa logon alareuna lausekekoodin kanssa
+
+%muuta korttien kokoa
+%\usepackage[paperwidth=6.00cm, paperheight=6.00cm, left=0.50cm, right=0.50cm, top=0.50cm, bottom=0.50cm]{geometry} %neliökortit
+\usepackage[paperwidth=10.5cm, paperheight=7.425cm, left=0.50cm, right=0.50cm, top=0.40cm, bottom=0.40cm]{geometry} %9 kpl A4:lle -kortit
+
+%printtauspdf valmiiksi, eli tehdään eri kappalemäärät pdf:ään valmiiksi, ettei tarvitse tulostinsoftaa
+
+% Aseta korttien taustakuva
+	\backgroundsetup{
+		scale=1,
+		color=black,
+		opacity=1.0,
+		angle=0,
+		contents={
+			\includegraphics[width=\paperwidth,height=\paperheight]{example-image}
+		}
+	}
+
+% Määritellään korttiluokat ja kuvaukset
+
+\newcommand{\kuvausA}{<lyhyesti A-luokan sisältö>}
+\newcommand{\kuvausB}{<lyhyesti B-luokan sisältö>}
+
+%0= sanallisesti lukulaskuja? kaksi  miljoonaa plus kolme miljoonaa tjsp.?ä – vielä perustavanlaatuisempi testaa biologisia matemaattisia?
+%A = yhteenlasku- ja vähennyslasku numeroilla ja muuttujilla, ei osittelulakia ja välttämätöntä kertolaskua
+%B= kertolaskua, keskittyminen laskujärjestykseen ja osittelulakiin
+%C = jakolaskua, murtolausekkeiden sieventämistä
+%D= potenssi
+%E= juuret
+%F= trigonometria
+%G = eksponenttifunktio ja logaritmifunktio
+%H = Kaikkia edellisiä
+%I = derivaatta?
+%J = integraali?
+% kompleksiluvut?
+% propositio- ja predikaattilogiikka
+% joukko-oppi
+%vektorialgebraa!

@@ -1,0 +1,112 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[10pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{fixmath}
+\usepackage{multicol}
+\usepackage{answers}
+%\usepackage{luacode}
+\usepackage{icomma}
+\usepackage[pages=some]{background}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{numprint}
+\usepackage{tikz}
+%\usepackage{tkz-euclide}
+\usepackage[finnish]{babel}
+ \usepackage{mathpazo}
+\usepackage{fouriernc}
+%\usepackage{xparse}
+\usepackage{microtype}
+
+\author{Joonas Mäkinen}
+\title{Equivalent Expressions} %titlekortti
+
+\Newassociation{vastaus}{Vastaus}{ans}
+
+\newcounter{lauseke}
+\setcounter{lauseke}{0}
+\newcounter{kortteja} %mahdollisuus laittaa kolme varianttia lausekkeelle?
+\setcounter{kortteja}{0}
+
+\newcommand\lauseke[2]{
+
+	\stepcounter{lauseke}
+	\stepcounter{kortteja}
+
+	\vspace*{\fill}
+	\huge{\begin{center}$#2$\end{center}}
+	\vspace*{\fill}
+
+		\tiny{#1\arabic{lauseke}} \hfill	\logo \\
+	\clearpage
+}
+
+\newcommand\lausekek[3][1]{
+
+	\stepcounter{lauseke}
+	\stepcounter{kortteja}
+
+	\vspace*{\fill}
+	\huge{\begin{center}
+	\begin{tikzpicture}[smooth, scale=0.5]
+    \draw[very thin,color=gray] (-#3,-#3) grid (#3,#3);
+    \draw[->] (-4.2,0) -- (4.2,0) node[right] {\small{$x$}};
+    \draw[->] (0,-4.2) -- (0,4.2) node[above] {\small{$y$}};
+	\clip (-#3,-#3) rectangle (#3,#3);
+    \draw[color=red] plot[id=x] function{#2} node[right] {};
+	\end{tikzpicture}
+	\end{center}}
+	\vspace*{\fill}
+
+		\tiny{#1\arabic{lauseke}} \hfill	\logo \\
+	\clearpage
+}
+
+\newcommand\tausta{
+		
+		\BgThispage
+		\tiny{
+	\vspace*{\fill}
+	 \hfill Joonas ''JoonasD6'' Mäkinen \\
+
+	 \hfill Creative Commons-BY 4.0\\}
+	\clearpage
+}
+
+\newcommand\kortti[2]{
+
+\stepcounter{luokka#1}
+\lauseke{#1}{#2}
+%\tausta	
+}
+
+\newcommand\korttik[3]{
+
+\stepcounter{luokka#1}
+\lausekek{#1}{#2}{#3}
+%\tausta	
+}
+
+
+%minne \begin{vastaus} \end{vastaus}
+	
+\newenvironment{kortit}[1]{
+
+\newcounter{luokka#1}
+\setcounter{luokka#1}{0}
+		
+		\renewcommand\k[2]{
+			\kortti{#1}{##1}
+			\kortti{#1}{##2} %entä kaksipuolisten korttien versio?
+			}
+		\renewcommand\kk[3][1]{
+			\kortti{#1}{##1}
+			\korttik{#1}{##2}{##3} %entä kaksipuolisten korttien versio?
+			}
+		}{
+\setcounter{lauseke}{0}
+}
