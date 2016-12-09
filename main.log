@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.8)  5 DEC 2016 15:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.8)  7 DEC 2016 12:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2067,188 +2067,432 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--132
 [20
 
 ]
-! Undefined control sequence.
-l.137 \pair
-           {3-3\cdot3}{-6}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 134.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 \pair{3-3\cdot
-                    3}{-6}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
-! Extra }, or forgotten $.
-l.137 \pair{3-3\cdot3}
-                      {-6}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.138 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.139 \pair
-           {3\cdot3-3}{6}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.139 \pair{3\cdot
-                  3-3}{6}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.139 \pair{3\cdot3-3}
-                      {6}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.140 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.141 \pair
-           {(3-3)\cdot3}{0}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.141 \pair{(3-3)\cdot
-                      3}{0}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.141 \pair{(3-3)\cdot3}
-                        {0}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.142 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.143 \pair
-           {x-2(2x+4)}{-3x-8}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.145 \pair
-           {2(2x-4)-x}{3x-8}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.147 \pair
-           {2t-3t(x-t)\cdot 0}{2t}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.147 \pair{2t-3t(x-t)\cdot
-                            0}{2t}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.147 \pair{2t-3t(x-t)\cdot 0}
-                              {2t}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.154 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-) [21
+[21
 
 ]
-No complaints by nag.
-(./main.aux) )
-(\end occurred inside a group at level 4)
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 134.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-### simple group (level 4) entered at line 147 ({)
-### simple group (level 3) entered at line 141 ({)
-### simple group (level 2) entered at line 139 ({)
-### simple group (level 1) entered at line 137 ({)
-### bottom level 
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+
+ []
+
+[22
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 136.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+
+ []
+
+[23
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 136.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+
+ []
+
+[24
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 138.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+
+ []
+
+[25
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 138.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+
+ []
+
+[26
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 140.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+
+ []
+
+[27
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 140.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+
+ []
+
+[28
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 142.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+
+ []
+
+[29
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 142.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+
+ []
+
+[30
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 144.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+
+ []
+
+[31
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 144.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+
+ []
+
+[32
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 146.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+
+ []
+
+[33
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 146.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+
+ []
+
+[34
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 148.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+
+ []
+
+[35
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 148.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+
+ []
+
+[36
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 150.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+
+ []
+
+[37
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 150.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+
+ []
+
+[38
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 152.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+
+ []
+
+[39
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 152.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+
+ []
+
+[40
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 154.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+
+ []
+
+[41
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 154.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+
+ []
+
+[42
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 156.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+
+ []
+
+[43
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 156.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+
+ []
+
+[44
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 158.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+
+ []
+
+[45
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 158.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+
+ []
+
+[46
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 160.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+
+ []
+
+[47
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 160.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+
+ []
+
+[48
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 162.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+
+ []
+
+[49
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 162.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+
+ []
+
+[50
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 164.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+
+ []
+
+[51
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 164.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+
+ []
+
+[52
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 166.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+
+ []
+
+[53
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 166.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+
+ []
+
+[54
+
+])
+No complaints by nag.
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 23538 strings out of 493315
- 468599 string characters out of 6137905
+ 23531 strings out of 493315
+ 468537 string characters out of 6137905
  497102 words of memory out of 5000000
  26462 multiletter control sequences out of 15000+600000
- 39335 words of font info for 99 fonts, out of 8000000 for 9000
+ 35526 words of font info for 92 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,5n,57p,485b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on main.pdf (21 pages, 35881 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on main.pdf (54 pages, 54563 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 306 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 19594 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 19798 words of extra memory for PDF output out of 20736 (max. 10000000)
 
