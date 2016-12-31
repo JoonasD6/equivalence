@@ -8,13 +8,15 @@
 \usepackage{fixmath}
 \usepackage{multicol}
 \usepackage{answers}
+\usepackage{forloop}
+\usepackage{systeme}
 \usepackage{icomma}
+\usepackage{ifthen}
 \usepackage[pages=some]{background}
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{numprint}
 \usepackage{tikz}
-%\usepackage{tkz-euclide}
 \usepackage[finnish]{babel}
  \usepackage{mathpazo}
 \usepackage{fouriernc}
@@ -25,47 +27,7 @@
 
 \Newassociation{vastaus}{Vastaus}{ans}
 
-\newcounter{expressions}
-\setcounter{expressions}{0}
-\newcounter{cards} %mahdollisuus laittaa kolme varianttia lausekkeelle?
-\setcounter{cards}{0}
-
-\newcommand\expression[2]{
-
-	\stepcounter{expressions}
-	\stepcounter{cards}
-
-	\vspace*{\fill}
-	\huge{\begin{center}$#2$\end{center}}
-	\vspace*{\fill}
-
-		\tiny{#1\arabic{expressions}} \hfill	\logo \\
-	\clearpage
-}
-
-\newcommand\expressiong[3][1]{
-
-	\stepcounter{expressions}
-	\stepcounter{cards}
-
-	\vspace*{\fill}
-	\huge{\begin{center}
-	\begin{tikzpicture}[smooth, scale=0.5]
-    \draw[very thin,color=gray] (-#3,-#3) grid (#3,#3);
-    \draw[->] (-4.2,0) -- (4.2,0) node[right] {\small{$x$}};
-    \draw[->] (0,-4.2) -- (0,4.2) node[above] {\small{$y$}};
-	\clip (-#3,-#3) rectangle (#3,#3);
-    \draw[color=red] plot[id=x] function{#2} node[right] {};
-	\end{tikzpicture}
-	\end{center}}
-	\vspace*{\fill}
-
-		\tiny{#1\arabic{expressions}} \hfill	\logo \\
-	\clearpage
-}
-
-\newcommand\background{
-		
+\newcommand\background{		
 		\BgThispage
 		\tiny{
 	\vspace*{\fill}
@@ -75,36 +37,61 @@
 	\clearpage
 }
 
-\newcommand\card[2]{
+\newcounter{expressions}
+\setcounter{expressions}{0}
+\newcounter{cards}
+\setcounter{cards}{0}
 
-\stepcounter{class#1}
-\expression{#1}{#2}
-%\background	
+\newcommand\expression[2]{
+
+	\stepcounter{expressions}
+	\vspace*{\fill}
+	\huge{\begin{center}$#2$\end{center}}
+	\vspace*{\fill}
+
+		\tiny{#1\arabic{expressions}} \hfill	\logo \\
+	\clearpage
+%		\background	
 }
 
-\newcommand\cardg[3]{
+\newcommand\expressiong[2]{ %kolmas argumentti koordinaatiston skaalaukseen?
 
-\stepcounter{class#1}
-\expressiong{#1}{#2}{#3}
-%\background
+	\stepcounter{expressions}
+%	\vspace*{\fill}
+	\huge{\begin{center}
+	\begin{tikzpicture}[smooth, scale=0.45]
+    \draw[very thin,color=gray] (-5,-5) grid (5,5);
+    \draw[->] (-5.2,0) -- (5.2,0) node[right] {\small{$x$}};
+    \draw[->] (0,-5.2) -- (0,5.2) node[above] {\small{$y$}};
+	\clip (-5,-5) rectangle (5,5);
+    \draw[color=red] plot[id=x] function{#2};
+	\end{tikzpicture}
+	\end{center}}
+	\vspace*{\fill}
+
+		\tiny{#1\arabic{expressions}} \hfill	\logo \\
+	\clearpage
+	%		\background	
 }
+
 
 
 %minne \begin{solution} \end{solution}
 	
 \newenvironment{cards}[1]{
+		\newcounter{series#1}
+		\setcounter{series#1}{0}
 
-\newcounter{class#1}
-\setcounter{class#1}{0}
-		
-		\newcommand\pair[2]{
-			\card{#1}{##1}
-			\card{#1}{##2} %entä kaksipuolisten korttien versio?
-			}
-		\newcommand\pairg[3][1]{
-			\card{#1}{##1}
-			\cardg{#1}{##2}{##3} %entä kaksipuolisten korttien versio?
-			}
+		\newcommand\pair[2]{ %define outside class?
+		\expression{#1}{##1}
+		\expression{#1}{##2}  
+		\addtocounter{series#1}{2}}
+
+	\newcommand\pairg[2]{ %define outside class?
+		\expression{#1}{##1}
+		\expressiong{#1}{##2}  
+		\addtocounter{series#1}{2}}
 		}{
-\setcounter{expressions}{0}
+	\addtocounter{cards}{\arabic{expressions}}
+	\setcounter{expressions}{0}
 }
