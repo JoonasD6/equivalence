@@ -54,16 +54,17 @@
 %		\background	
 }
 
-\newcommand\expressiong[2]{ %kolmas argumentti koordinaatiston skaalaukseen?
+\newcommand\expressiong[2]{ %kolmas argumentti koordinaatiston skaalaukseen? %handling of asymptotes?
 
 	\stepcounter{expressions}
 %	\vspace*{\fill}
 	\huge{\begin{center}
-	\begin{tikzpicture}[smooth, scale=0.45]
+	\begin{tikzpicture}[smooth, scale=0.45, samples=100]
     \draw[very thin,color=gray] (-5,-5) grid (5,5);
     \draw[->] (-5.2,0) -- (5.2,0) node[right] {\small{$x$}};
     \draw[->] (0,-5.2) -- (0,5.2) node[above] {\small{$y$}};
 	\clip (-5,-5) rectangle (5,5);
+    \draw[color=red] plot[id=x] function{#2};
     \draw[color=red] plot[id=x] function{#2};
 	\end{tikzpicture}
 	\end{center}}
@@ -87,7 +88,7 @@
 		\expression{#1}{##2}  
 		\addtocounter{series#1}{2}}
 
-	\newcommand\pairg[2]{ %define outside class?
+		\newcommand\pairg[2]{ %define outside class?
 		\expression{#1}{##1}
 		\expressiong{#1}{##2}  
 		\addtocounter{series#1}{2}}
