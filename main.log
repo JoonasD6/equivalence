@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.8)  16 JAN 2017 17:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.8)  29 JAN 2017 21:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1136,27 +1136,13 @@ Package: translator 2010/06/12 ver 1.10
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/beamer/translator/translator-lang
 uage-mappings.tex)))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/numprint/numprint.sty
-Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count182
-\c@nprt@mantissa@digitsafter=\count183
-\c@nprt@exponent@digitsbefore=\count184
-\c@nprt@exponent@digitsafter=\count185
-\nprt@digitwidth=\skip60
-\nprt@sepwidth=\skip61
-\nprt@decimalwidth=\skip62
-\nprt@blockwidth=\skip63
-\nprt@digittoks=\toks38
-\nprt@pretoks=\toks39
-\nprt@posttoks=\toks40
-\nprt@thisdigit=\count186
-\nprt@curpos=\count187
-\nprt@rndpos=\count188
-\c@nprt@digitsfirstblock=\count189
-\c@nprt@blockcnt=\count190
-\c@nprt@cntprint=\count191
-
-No configuration file `numprint.cfg' found.)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2013/05/16 v3.9f The Babel package
 
@@ -1165,14 +1151,14 @@ Language: finnish 2007/10/20 v1.3q Finnish support from the babel system
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/05/16 v3.9f Babel common definitions
-\babel@savecnt=\count192
+\babel@savecnt=\count182
 \U@D=\dimen264
 )
 Package babel Info: Making " an active character on input line 89.
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
-\symupright=\mathgroup6
+\symupright=\mathgroup7
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fouriernc/fouriernc.sty
 Package: fouriernc 2005/12/20 1.0 fouriernc package
@@ -1371,7 +1357,7 @@ LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
 (Font)              `letters' in the math version `bold' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/zplm/b/it --> FML/futmi/m/it on input line 59.
-\symotherletters=\mathgroup7
+\symotherletters=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 61.
 LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
@@ -1476,7 +1462,7 @@ LaTeX Font Info:    Redeclaring math accent \check on input line 253.
 LaTeX Font Info:    Redeclaring math accent \hat on input line 254.
 LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
-\symUfutm=\mathgroup8
+\symUfutm=\mathgroup9
 )
 LaTeX Font Info:    Redeclaring symbol font `letters' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
@@ -1527,28 +1513,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks41
-\MT@count=\count193
+\MT@toks=\toks38
+\MT@count=\count183
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen265
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count194
+\MT@listname@count=\count184
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip64
+\MT@outer@space=\skip60
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-\c@Vastaus=\count195
-\c@expressions=\count196
-\c@cards=\count197
+\c@Vastaus=\count185
+\c@expressions=\count186
+\c@cards=\count187
 )
 (./custom.tex
 (/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1561,9 +1547,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count198
-\Gm@cntv=\count199
-\c@Gm@tempcnt=\count200
+\Gm@cnth=\count188
+\Gm@cntv=\count189
+\c@Gm@tempcnt=\count190
 \Gm@bindingoffset=\dimen266
 \Gm@wd@mp=\dimen267
 \Gm@odd@mp=\dimen268
@@ -1572,7 +1558,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen271
 \Gm@layouthoffset=\dimen272
 \Gm@layoutvoffset=\dimen273
-\Gm@dimlist=\toks42
+\Gm@dimlist=\toks39
 ))
 (./main.aux)
 \openout1 = `main.aux'.
@@ -1634,18 +1620,17 @@ Package nag Info: Command \RaggedRight not defined, skipping amendment on input
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count201
+\scratchcounter=\count191
 \scratchdimen=\dimen274
 \scratchbox=\box87
-Normal \count register pool exhausted, switching to extended pool.
-\nofMPsegments=\count277
-\nofMParguments=\count278
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count279
+\nofMPsegments=\count192
+\nofMParguments=\count193
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count194
 \MPscratchDim=\dimen275
-\MPnumerator=\count280
-\makeMPintoPDFobject=\count281
-\everyMPtoPDFconversion=\toks44
+\MPnumerator=\count195
+\makeMPintoPDFobject=\count196
+\everyMPtoPDFconversion=\toks41
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1757,7 +1742,7 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 4.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 4.
-\c__siunitx_mathsf_int=\count282
+\c__siunitx_mathsf_int=\count197
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 7.06795pt on input line 4.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1787,6 +1772,10 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 4.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 4.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-eur.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 4.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1811,7 +1800,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count283
+\c__siunitx_mathtt_int=\count198
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1822,51 +1811,51 @@ Output from handle ans going to ans.tex
 \openout5 = `ans.tex'.
 
 (./cards.tex
-\c@seriesC=\count284
+\c@seriesF1=\count199
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 19.28804pt on input line 120.
+(Font)              scaled to size 19.28804pt on input line 7.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 120.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 120.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 120.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 120.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 120.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 120.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 120.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 120.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 120.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 4.64996pt on input line 120.
+(Font)              scaled to size 4.64996pt on input line 7.
  <laakis-logo.png, id=4, 283.0575pt x 36.135pt>
 File: laakis-logo.png Graphic file (type png)
 
 <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 120.
+Package pdftex.def Info: laakis-logo.png used on input line 7.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
 
  []
 
 LaTeX Font Info:    Font shape `T1/fnc/m/sl' will be
-(Font)              scaled to size 9.29993pt on input line 120.
+(Font)              scaled to size 9.29993pt on input line 7.
 [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./laakis-logo.png>]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 13.39188pt on input line 7.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 19.08076pt on input line 7.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 7.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 7.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 7.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 7.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 7.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 19.08076pt on input line 7.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 7.
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 120.
+Package pdftex.def Info: laakis-logo.png used on input line 7.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
 
  []
 
@@ -1875,10 +1864,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--120
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 121.
+Package pdftex.def Info: laakis-logo.png used on input line 8.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
 
  []
 
@@ -1887,10 +1876,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 121.
+Package pdftex.def Info: laakis-logo.png used on input line 8.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
 
  []
 
@@ -1899,10 +1888,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 122.
+Package pdftex.def Info: laakis-logo.png used on input line 9.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
 
  []
 
@@ -1911,10 +1900,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--122
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 122.
+Package pdftex.def Info: laakis-logo.png used on input line 9.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
 
  []
 
@@ -1923,10 +1912,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--122
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 123.
+Package pdftex.def Info: laakis-logo.png used on input line 10.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
 
  []
 
@@ -1935,10 +1924,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--123
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 123.
+Package pdftex.def Info: laakis-logo.png used on input line 10.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
 
  []
 
@@ -1947,10 +1936,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--123
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 124.
+Package pdftex.def Info: laakis-logo.png used on input line 11.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
 
  []
 
@@ -1959,10 +1948,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--124
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 124.
+Package pdftex.def Info: laakis-logo.png used on input line 11.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
 
  []
 
@@ -1971,10 +1960,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--124
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 125.
+Package pdftex.def Info: laakis-logo.png used on input line 12.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
 
  []
 
@@ -1983,10 +1972,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 125.
+Package pdftex.def Info: laakis-logo.png used on input line 12.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
 
  []
 
@@ -1995,10 +1984,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--125
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 126.
+Package pdftex.def Info: laakis-logo.png used on input line 13.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
 
  []
 
@@ -2007,10 +1996,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--126
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 126.
+Package pdftex.def Info: laakis-logo.png used on input line 13.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
 
  []
 
@@ -2019,10 +2008,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--126
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 127.
+Package pdftex.def Info: laakis-logo.png used on input line 14.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
  []
 
@@ -2031,10 +2020,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--127
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 127.
+Package pdftex.def Info: laakis-logo.png used on input line 14.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
  []
 
@@ -2043,10 +2032,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--127
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 128.
+Package pdftex.def Info: laakis-logo.png used on input line 15.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
 
  []
 
@@ -2055,10 +2044,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 128.
+Package pdftex.def Info: laakis-logo.png used on input line 15.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
 
  []
 
@@ -2067,10 +2056,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 129.
+Package pdftex.def Info: laakis-logo.png used on input line 16.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
 
  []
 
@@ -2079,10 +2068,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--129
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 129.
+Package pdftex.def Info: laakis-logo.png used on input line 16.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
 
  []
 
@@ -2091,10 +2080,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--129
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 130.
+Package pdftex.def Info: laakis-logo.png used on input line 17.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
 
  []
 
@@ -2103,10 +2092,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--130
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 130.
+Package pdftex.def Info: laakis-logo.png used on input line 17.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
 
  []
 
@@ -2115,10 +2104,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--130
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 131.
+Package pdftex.def Info: laakis-logo.png used on input line 18.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
 
  []
 
@@ -2127,10 +2116,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 131.
+Package pdftex.def Info: laakis-logo.png used on input line 18.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
 
  []
 
@@ -2139,10 +2128,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 132.
+Package pdftex.def Info: laakis-logo.png used on input line 19.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
 
  []
 
@@ -2151,10 +2140,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--132
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 132.
+Package pdftex.def Info: laakis-logo.png used on input line 19.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
 
  []
 
@@ -2163,10 +2152,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--132
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 133.
+Package pdftex.def Info: laakis-logo.png used on input line 20.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 
  []
 
@@ -2175,10 +2164,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--133
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 133.
+Package pdftex.def Info: laakis-logo.png used on input line 20.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 
  []
 
@@ -2187,10 +2176,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--133
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 134.
+Package pdftex.def Info: laakis-logo.png used on input line 21.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 
  []
 
@@ -2199,10 +2188,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--134
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 134.
+Package pdftex.def Info: laakis-logo.png used on input line 21.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 
  []
 
@@ -2211,10 +2200,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--134
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 135.
+Package pdftex.def Info: laakis-logo.png used on input line 22.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
 
  []
 
@@ -2223,10 +2212,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 135.
+Package pdftex.def Info: laakis-logo.png used on input line 22.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
 
  []
 
@@ -2235,10 +2224,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 136.
+Package pdftex.def Info: laakis-logo.png used on input line 23.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 
  []
 
@@ -2247,10 +2236,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--136
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 136.
+Package pdftex.def Info: laakis-logo.png used on input line 23.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 
  []
 
@@ -2259,10 +2248,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--136
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 137.
+Package pdftex.def Info: laakis-logo.png used on input line 24.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
  []
 
@@ -2271,34 +2260,254 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--137
 ]
 File: laakis-logo.png Graphic file (type png)
  <use laakis-logo.png>
-Package pdftex.def Info: laakis-logo.png used on input line 137.
+Package pdftex.def Info: laakis-logo.png used on input line 24.
 (pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
  []
 
 [36
 
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 25.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+
+ []
+
+[37
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 25.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+
+ []
+
+[38
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 26.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+
+ []
+
+[39
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 26.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+
+ []
+
+[40
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 27.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+[41
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 27.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+[42
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 28.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+
+ []
+
+[43
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 28.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+
+ []
+
+[44
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 29.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+
+ []
+
+[45
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 29.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+
+ []
+
+[46
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 30.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+
+ []
+
+[47
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 30.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+
+ []
+
+[48
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 31.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+[49
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 31.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+[50
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 32.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+[51
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 32.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+[52
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 33.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+
+ []
+
+[53
+
+]
+File: laakis-logo.png Graphic file (type png)
+ <use laakis-logo.png>
+Package pdftex.def Info: laakis-logo.png used on input line 33.
+(pdftex.def)             Requested size: 113.22098pt x 14.45372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+
+ []
+
+[54
+
 ])
 No complaints by nag.
 (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 23967 strings out of 493315
- 475287 string characters out of 6137905
- 507562 words of memory out of 5000000
- 26879 multiletter control sequences out of 15000+600000
- 36458 words of font info for 93 fonts, out of 8000000 for 9000
+ 23748 strings out of 493315
+ 471386 string characters out of 6137905
+ 496415 words of memory out of 5000000
+ 26655 multiletter control sequences out of 15000+600000
+ 38136 words of font info for 99 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 65i,5n,57p,485b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,6n,57p,485b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on main.pdf (36 pages, 44240 bytes).
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on main.pdf (54 pages, 75091 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 19690 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 19798 words of extra memory for PDF output out of 20736 (max. 10000000)
 

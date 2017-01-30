@@ -15,8 +15,9 @@
 \usepackage[pages=some]{background}
 \usepackage{siunitx}
 \usepackage{graphicx}
-\usepackage{numprint}
+%\usepackage{numprint}
 \usepackage{tikz}
+\usepackage{upgreek}
 \usepackage[finnish]{babel}
  \usepackage{mathpazo}
 \usepackage{fouriernc}
@@ -24,6 +25,8 @@
 
 \author{Joonas Mäkinen}
 \title{Equivalent Expressions} %titlekortti
+
+\renewcommand{\d}{\mathrm{d}}
 
 \Newassociation{vastaus}{Vastaus}{ans}
 
@@ -42,14 +45,16 @@
 \newcounter{cards}
 \setcounter{cards}{0}
 
+%footer/counter-def?
+
 \newcommand\expression[2]{
 
 	\stepcounter{expressions}
 	\vspace*{\fill}
-	\huge{\begin{center}$#2$\end{center}}
+	\huge{\begin{center}#2\end{center}}
 	\vspace*{\fill}
 
-		\tiny{#1\arabic{expressions}} \hfill	\logo \\
+		\tiny{#1.\arabic{expressions}} \hfill	\logo \\
 	\clearpage
 %		\background	
 }
@@ -70,7 +75,7 @@
 	\end{center}}
 	\vspace*{\fill}
 
-		\tiny{#1\arabic{expressions}} \hfill	\logo \\
+		\tiny{#1.\arabic{expressions}} \hfill	\logo \\
 	\clearpage
 	%		\background	
 }
@@ -82,6 +87,10 @@
 \newenvironment{cards}[1]{
 		\newcounter{series#1}
 		\setcounter{series#1}{0}
+
+		\newcommand\card[1]{ %define outside class?
+		\expression{#1}{##1}
+		\stepcounter{series#1}}
 
 		\newcommand\pair[2]{ %define outside class?
 		\expression{#1}{##1}
