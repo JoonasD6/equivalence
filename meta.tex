@@ -101,7 +101,14 @@
 		\expression{#1}{##1}
 		\expressiong{#1}{##2}  
 		\addtocounter{series#1}{2}}
-		}{
+		
+		\newcommand\triple[3]{ %define outside class?
+		\expression{#1}{##1}
+		\expression{#1}{##2}
+		\expression{#1}{##3}
+		\addtocounter{series#1}{3}}	
+
+	}{
 	\addtocounter{cards}{\arabic{expressions}}
 	\setcounter{expressions}{0}
 }
