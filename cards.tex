@@ -1,237 +1,576 @@
-%Korttien lisääminen komennolla \pair{x}{y}, missä x ja y ovat saman lausekkeen kaksi eri muotoa.
+% !TeX root = main.tex
+%todo: cards-> deck
+%Korttien lisääminen komennolla \pair{x}{y}, missä x ja y ovat saman asian kaksi eri muotoa.
+%\pairm{x}{y} automatically assumes math display mode, no need to add dollar signs
 %\pairg{}{}, kun _jälkimmäiseen_ laitetaan kuvaaja %make even simpler to ease addition of cards? Input from text file? separated by ampersand instead of in curly braces?
+
+%korttien määrä kannattaa pitää pienissä erissä 18:ssa ja vähän isommissa 36:ssa; isommat on epärohkaisevan isoja läjiä
 
 %switch sille, että minkä luokan kortit printataan.
 
-\begin{cards}{F1} %yhdistä kaavan nimi tai merkintä kaavaan
-\pair{paino}{$\vec{G}=m\vec{g}$}
-\pair{Newton II}{$\sum \vec{F}=m\vec{a}$}
-\pair{jousen potentiaalienergia}{$\Delta E_\text{p}=\dfrac{1}{2}k(\Delta x)^2$}
-\pair{harmoninen voima}{$\vec{F}=-k\Delta \vec{x}$}
-\pair{Newton III}{$ \vec{F}_{12}=-\vec{F}_{21} $}
-\pair{etenemisen liike-energia}{$E_\text{k}=\dfrac{1}{2}mv^2$}
-\pair{painovoiman potentiaalienergia\\ (approksimaatio)}{$ \Delta E_\text{p}=mg\Delta h $}
-\pair{mekaanisen energian säilymislaki}{$ \Delta E_\text{p}+\Delta E_\text{k}=0$}
-\pair{energian säilymislaki}{$ \dfrac{\d E}{\d t}=0 $}
-\pair{Newton I}{$ \sum \vec{F}=\vec{0} \Rightarrow (\vec{a}=\vec{0} \Leftrightarrow \vec{v}=\text{vakio})$}
-\pair{Newtonin painovoimalaki}{$G=\gamma\dfrac{m_1m_2}{r^2}$}
-\pair{noste}{$ N=\rho V g $}
-\pair{normaali-ilmanpaine}{$ p_0 $}
-\pair{hydrostaattinen paine}{$p=\rho g h$}
-\pair{voiman tekemä työ}{$ W=\int\vec{F}\cdot \d\vec{s} $}
-\pair{teho}{$P=\dfrac{\d E}{\d t}$}
-\pair{liukukitka}{$ F_\upmu=\mu N $}
-\pair{paine}{$ P=\dfrac{F}{A} $}
-\pair{lepokitka}{$ F_{\upmu_0}=\mu_0 N $}
-\pair{keskinopeus}{$ \vec{v}_\text{k}=\dfrac{\Delta \vec{x}}{\Delta t} $}
-\pair{keskikiihtyvyys}{$ \vec{a}_\text{k}=\dfrac{\Delta \vec{v}}{\Delta t} $}
-\pair{(hetkellinen) nopeus}{$ \vec{v}=\dfrac{\d \vec{x}}{\d t} $}
-\pair{(hetkellinen) kiihtyvyys}{$ \vec{a}=\dfrac{\d \vec{v}}{\d t} $}
-\pair{liikemäärän säilymislaki}{$ \sum \vec{p}_\text{alussa} =\sum \vec{p}_\text{lopussa}$}
-\pair{impulssi}{$\vec{I}=\vec{F}\Delta t=\Delta \vec{p}$}
-\pair{Coulombin laki}{$ F=\dfrac{q_1q_2}{4\pi\epsilon_\text{r}\epsilon_0r^2} $}
-\pair{sijainti tasaisessa kiihdytyksessä}{$ \vec{x}=\vec{x}_0+\vec{v}_0t+\dfrac{1}{2}\vec{a}(\Delta t)^2 $}
-%\card{mo}
-\end{cards}
 
-%aminohapot
+%\begin{deck}{M5} %sama kaava eri muodoissa
+%\pair{$ ax^2+bx+c=0 $}{$ x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a} $}
+%\pair{$ F=ma$}{$ a=\dfrac{F}{m}$}
+%\end{deck}
+
+%vektorit ja niiden lineaarikombinaatiot
+
+
+%\begin{deck}{C1}%aminohapot; smaller size
+%\pair{glysiini}{\chemfig{H_3N-[:30]-[:-30]COOH}}
+%\pair{alaniini}{\chemfig{H_3N-[:30](-[:90])-[:-30]COOH}}
+%\end{deck}
 
 %mikä voidaan johtaa mistäkin, langan jännitysvoima, pinnantukivoima, ilmanvastus
 
-%\begin{cards}{A}
-%\pair{11}{\text{yksitoista}}
-%\pair{110}{\text{satakymmenen}}
-%\pair{101}{\text{satayksi}}
-%\pair{111}{\text{satayksitoista}}
-%\pair{1\,000}{\text{tuhat}}
-%\pair{1\,100}{\text{tuhat sata}}
-%\pair{1\,010}{\text{tuhat kymmenen}}
-%\pair{1\,110}{\text{tuhat satakymmenen}}
-%\pair{1\,001}{\text{tuhat yksi}}
-%\pair{1\,011}{\text{tuhat yksitoista}}
-%\pair{1\,101}{\text{tuhat satayksi}}
-%\pair{1\,111}{\text{tuhat satayksitoista}}
-%\pair{11\,111}{\text{yksitoistatuhatta satayksitoista}}
-%\pair{11\,100}{\text{yksitoistatuhatta sata}}
-%\pair{11\,010}{\text{yksitoistatuhatta kymmenen}}
-%\pair{11\,001}{\text{yksitoistatuhatta yksi}}
-%\pair{10\,111}{\text{kymmenentuhatta satayksitoista}}
-%\pair{10\,010}{\text{kymmenentuhatta kymmenen}}
-%\end{cards}
-
-%\begin{cards}{A} %sum, subtraction, additive inverse, product with natural numbers
+%\begin{deck}{A2}
+%\pair{$11$}{\text{yksitoista}}
+%\pair{$110$}{\text{satakymmenen}}
+%\pair{$101$}{\text{satayksi}}
+%\pair{$111$}{\text{satayksitoista}}
+%\pair{$1\,000$}{\text{tuhat}}
+%\pair{$1\,100$}{\text{tuhat sata}}
+%\pair{$1\,010$}{\text{tuhat kymmenen}}
+%\pair{$1\,110$}{\text{tuhat satakymmenen}}
+%\pair{$1\,001$}{\text{tuhat yksi}}
+%\pair{$1\,011$}{\text{tuhat yksitoista}}
+%\pair{$1\,101$}{\text{tuhat satayksi}}
+%\pair{$1\,111$}{\text{tuhat satayksitoista}}
+%\pair{$11\,111$}{\text{yksitoistatuhatta satayksitoista}}
+%\pair{$11\,100$}{\text{yksitoistatuhatta sata}}
+%\pair{$11\,010$}{\text{yksitoistatuhatta kymmenen}}
+%\pair{$11\,001$}{\text{yksitoistatuhatta yksi}}
+%\pair{$10\,111$}{\text{kymmenentuhatta satayksitoista}}
+%\pair{$10\,010$}{\text{kymmenentuhatta kymmenen}}
+%\end{deck}
 %
-%\pair{-2-(-5)}{3}
-%\pair{5-(-2)}{7}
-%\pair{5+(-x)}{5-x}
-%\pair{2+(+x)}{2+x}
-%\pair{x-y}{-y+x}
-%\pair{x-y-x}{-y}
-%\pair{x+x-x+x}{2x}
-%\pair{x}{x(2-1)}
-%\pair{(x+y)-x}{x+(y-x)}
-%\pair{-x+(x+y)}{y}
-%\pair{-[(-x)\cdot y]}{yx}
-%\pair{y\cdot(-x)}{-(xy)}
-%\pair{(-2)[(-x)\cdot y]}{2xy}
-%\pair{[(-2)(-1)]\cdot 2}{4}
-%\pair{-[(-z)\cdot (-y)]}{-(yz)}
-%\pair{-(-x)\cdot [-(-y)]}{xy}
-%\pair{(-x)(-y)(-z)}{-xyz}
-%\pair{(-2x)(-2y)(-2z)}{-8xyz}
-%\pair{(-2)[x(-y)]}{2xy}
-%\pair{(-2)[x(-y)]}{[x(-2)](-y)}
-%\pair{-(2z)\cdot(-(xy))}{2zyx}
-%\pair{(x+y)-x+(-y)}{0}
-%\pair{(-x)-(-x)}{0}
-%\pair{2-2x-(2x)}{2-4x}
-%\pair{2-x-2}{-x}
-%\pair{x-2-x}{-2}
-%\pair{xy-2xy-yx+(-yx)}{-3xy}
+%\begin{deck}{murto1} %associate egyptian fractions with pie diagrams
+%	\pair{$ \dfrac{1}{2} $}{\circfrac{1}{2}}
+%	\pair{$ \dfrac{1}{3} $}{\circfrac[25]{1}{3}}
+%	\pair{$ \dfrac{1}{4} $}{\circfrac[120]{1}{4}}
+%	\pair{$ \dfrac{1}{5} $}{\circfrac[160]{1}{5}}
+%	\pair{$ \dfrac{1}{6} $}{\circfrac{1}{6}}
+%	\pair{$ \dfrac{1}{7} $}{\circfrac[-30]{1}{7}}
+%	\pair{$ \dfrac{1}{8} $}{\circfrac{1}{8}}
+%	\pair{$ \dfrac{1}{9} $}{\circfrac[30]{1}{9}}
+%	\pair{$ \dfrac{1}{10} $}{\circfrac{1}{10}}
+%\end{deck}
 %
-%\end{cards} %54
+%\begin{deck}{murto2} %associate egyptian fractions with rectangular grid diagrams %originally just square here and rectangles later
+%	\pair{$ \dfrac{1}{4} $}{\rectfrac{1}{2}}
+%	\pair{$ \dfrac{1}{9} $}{\rectfrac{1}{3}}
+%	\pair{$ \dfrac{1}{16} $}{\rectfrac{1}{4}}
+%	\pair{$ \dfrac{1}{25} $}{\rectfrac[-0.8]{1}{5}}
+%	\pair{$ \dfrac{1}{36} $}{\rectfrac[0.8]{1}{6}}
+%	\pair{$\dfrac{1}{12}$}{
+%	\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%	\fill[color=gray] (0,0) rectangle (1,1);
+%	\draw (0,0) grid (3,4);
+%	\end{tikzpicture}}}
+%	\pair{$\dfrac{1}{15}$}{
+%	\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5,rotate=90]
+%	\fill[color=gray] (0,0) rectangle (1,1);
+%	\draw (0,0) grid (3,5);
+%	\end{tikzpicture}}}
+%	\pair{$ \dfrac{1}{6} $}{	\adjustbox{valign=m}{\begin{tikzpicture}[scale=-0.5]
+%		\fill[color=gray] (0,0) rectangle (1,2);
+%		\draw[yscale=2] (0,0) grid (3,2);
+%		\end{tikzpicture}}}
+%	\pair{$ \dfrac{1}{8} $}{	\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%		\fill[color=gray] (0,0) rectangle (1,2);
+%		\draw[yscale=2] (0,0) grid (4,2);
+%		\end{tikzpicture}}}
+%	
+%\end{deck}
 
-%\begin{cards}{B} %cancellation
+
+%\begin{deck}{yhdistetyt1} %prime factorisation of natural numbers with power expressions
+%	\pairm{4}{2\cdot2}
+%	\pairm{6}{2\cdot3}
+%	\pairm{8}{2\cdot2\cdot2}
+%	\pairm{9}{3\cdot 3}
+%	\pairm{10}{2\cdot5}
+%	\pairm{12}{2\cdot2\cdot 3}
+%	\pairm{14}{2\cdot7}
+%	\pairm{15}{3\cdot5}
+%	\pairm{16}{2\cdot2\cdot 2\cdot2}
+%	\pairm{18}{2\cdot9}
+%	\pairm{20}{2\cdot2\cdot 5}
+%	\pairm{21}{3\cdot7}
+%	\pairm{22}{2\cdot11}
+%	\pairm{24}{2\cdot2\cdot2\cdot3}
+%	\pairm{25}{5\cdot5}
+%	\pairm{26}{2\cdot13}
+%	\pairm{27}{3\cdot3\cdot3}
+%	\pairm{28}{2\cdot2\cdot7}
+%\end{deck}
+
+
+%simppelit osittelulait ilman miinuksia ja vain kokonaislukukertoimia
+%\begin{deck}{dist1}
+%\pairm{x+x}{(1+1)x}
+%\pairm{8y+7y}{(8+7)y}
+%\pairm{4x+x}{(4+1)x}
+%\pairm{9x+10x}{19x}
+%\pairm{4(x+1)}{4x+4}
+%\pairm{2(2+y)}{4+2y}
+%\pairm{y(y+1)}{y^2+y}
+%\pairm{6(3+y)}{6\cdot 3 + 6y}
+%\pairm{2(2y+1)}{4y+2}
+%\end{deck}
+
+%\begin{deck}{murto3} %associate proper fractions with pie diagrams
+%	\pair{$ \dfrac{2}{3} $}{\circfrac{2}{3}}
+%	\pair{$ \dfrac{3}{4} $}{\circfrac[25]{3}{4}}
+%	\pair{$ \dfrac{4}{5} $}{\circfrac[120]{4}{5}}
+%	\pair{$ \dfrac{5}{6} $}{\circfrac[160]{5}{6}}
+%	\pair{$ \dfrac{6}{7} $}{\circfrac{6}{7}}
+%	\pair{$ \dfrac{2}{5} $}{\circfrac[-30]{2}{7}}
+%	\pair{$ \dfrac{3}{7} $}{\circfrac{3}{7}}
+%	\pair{$ \dfrac{4}{9} $}{\circfrac[30]{4}{9}}
+%	\pair{$ \dfrac{5}{11} $}{\circfrac{5}{11}}
+%\end{deck}
+%
+%\begin{deck}{murto4} %sums and differences of true fractions (of varying numerators; only coprime) shown as rectangular diagrams of mutually equal size
+%	\pairm{\dfrac{1}{2}}{
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (1,0) rectangle (3,2);
+%				\draw (0,0) grid (3,4);
+%		\end{tikzpicture}}+
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (0,0) rectangle (1,2);
+%				\draw[yscale=2] (0,0) grid (3,2);
+%	\end{tikzpicture}}}
+%	\pairm{\dfrac{2}{3}}{
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (2,0) rectangle (3,2);
+%				\draw (0,0) grid (3,4);
+%		\end{tikzpicture}}+
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (0,0) rectangle (3,2);
+%				\draw[yscale=2] (0,0) grid (3,2);
+%	\end{tikzpicture}}}
+%	\pairm{\dfrac{1}{2}}{
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (2,0) rectangle (3,2);
+%				\draw (0,0) grid (3,4);
+%		\end{tikzpicture}}+
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (0,0) rectangle (2,2);
+%				\draw[yscale=2] (0,0) grid (3,2);
+%	\end{tikzpicture}}}
+%	\pairm{\dfrac{13}{16}}{
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (1,0) rectangle (4,3);
+%				\draw (0,0) grid (4,4);
+%		\end{tikzpicture}} +
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (2,0) rectangle (4,2);
+%				\draw[scale=2] (0,0) grid (2,2);
+%		\end{tikzpicture}} 
+%	}
+%	\pairm{\dfrac{1}{6}}{
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (0,0) rectangle (2,2);
+%				\draw[yscale=2] (0,0) grid (3,2);
+%		\end{tikzpicture}}-
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (1,0) rectangle (3,1);
+%				\draw (0,0) grid (3,4);
+%		\end{tikzpicture}}
+%	}
+%	\pairm{\dfrac{1}{2}}{ 
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (0,0) rectangle (2,4);
+%				\draw[yscale=1, xscale=1] (0,0) grid (3,4);
+%		\end{tikzpicture}}-
+%		\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%				\fill[color=gray] (1,0) rectangle (3,1);
+%				\draw (0,0) grid (3,4);
+%		\end{tikzpicture}}
+%	}
+%	
+%	\pairm{\dfrac{4}{6}}{\circfrac{1}{2} + \circfrac{1}{6}}
+%	\pairm{\dfrac{2}{6}}{\circfrac{1}{2} - \circfrac{1}{6}}
+%	\pairm{\dfrac{2}{7}}{\circfrac{1}{7} + \circfrac{2}{14}}
+%	\pairm{\dfrac{1}{14}}{\circfrac{1}{7} - \circfrac{1}{14}}
+%	\pairm{\dfrac{1}{12}}{\circfrac{1}{6} - \circfrac{1}{12}}
+%	\pairm{\dfrac{5}{6}}{\circfrac{1}{2} + \circfrac{1}{3}}
+%	\pairm{\dfrac{2}{2}}{\circfrac{1}{2} + \circfrac{1}{2}}
+%	\pairm{\dfrac{3}{2}}{\circfrac{3}{4} + \circfrac{3}{4}}
+%	\pairm{\dfrac{1}{4}}{\circfrac{1}{2} - \circfrac{1}{4}}
+%	\pairm{\dfrac{1}{8}}{\circfrac{1}{4} - \circfrac{1}{8}}
+%	\pairm{\dfrac{1}{10}}{\circfrac{1}{5} - \circfrac{1}{10}}
+%	\pairm{\dfrac{1}{3}}{\circfrac{1}{1} - \circfrac{2}{3}}
+%\end{deck}
+
+%sit miinuksilla binomin sisällä
+%sit miinuskertoimilla
+%sit binomi kertaa binomi...
+
+%murtolukujen yhteenlasku tunnetuilla luvuilla
+%\begin{deck}{murto5}
+%\pairm{\frac{1}{1}+\frac{1}{1}}{\frac{2}{1}}
+%\pairm{\frac{1}{2}+\frac{1}{1}}{\frac{3}{2}}
+%\pairm{\frac{1}{4}+\frac{1}{2}}{\frac{3}{4}}
+%\pairm{\frac{1}{3}+\frac{1}{9}}{\frac{4}{9}}
+%\pairm{\frac{1}{3}+\frac{1}{4}}{\frac{7}{12}}
+%\pairm{\frac{1}{4}+\frac{1}{5}}{\frac{9}{20}}
+%\pairm{\frac{1}{5}+\frac{1}{6}}{\frac{11}{30}}
+%\pairm{\frac{1}{2}+\frac{1}{7}}{\frac{9}{14}}
+%\pairm{\frac{1}{3}+\frac{1}{7}}{\frac{10}{21}}
+%\end{deck}
+
+
+%\begin{deck}{A2} % sum, subtraction, additive inverse, definition of subtraction with variables + addition of variables
+%	\pairm{5+(-x)}{5-x}
+%	\pairm{2+(+x)}{2+x}
+%	\pairm{x-y-x}{-y}
+%	\pairm{x+x-x+x}{2x}
+%	\pairm{-x}{x(1-2)}
+%	\pairm{-x+(x+y)}{y}
+%	\pairm{2-x-2}{-x}
+%	\pairm{x-2-x}{-2}
+%	\pairm{xy-2xy-yx+(-yx)}{-3xy}
+%	\pairm{(x+y)-x}{x+(y-x)}
+%	\pairm{2-2x-(2x)}{2-4x}
+%	\pairm{(x+y)-x+(-y)}{0}
+%	\pairm{(-x)-(-x)}{0}
+%	\pairm{x+(-1)}{x-1}
+%	\pairm{-x+(-1)}{-x-1}
+%	\pairm{-x-(-1)}{1-x}
+%	\pairm{1-(-x)}{1+x}
+%	\pairm{-2-x}{-2+(-x)}
+%\end{deck}
+
+%\pairm{2-(+x)}{2-x}
+%\pairm{2-(+7)}{-5}
+%\pairm{7-(+2)}{5}
+%\pairm{5-(-7)}{12}
+%\pairm{-(-x)-y}{x-y}
+%\pairm{-(-y)}{y}
+%\pairm{+(-y)}{-y}
+%\pairm{+(+y)}{+y}
+%\pairm{-(+y)}{-y}
+%\pairm{2-(-x)-(-y)}{2+x+y}
+%\pairm{3-2-1}{3+(-2)+(-1)}
+%\pairm{3-2-1}{3-2+(-1)}
+%\pairm{3-2-1}{3+(-2)-1}
+
+%\begin{deck}{A4} %products with known values, minus signs (no distributive law!)
+%\pairm{(-1)(-2)}{2}
+%\pairm{(-1)(-2)(-1)}{-2}
+%\pairm{[(-2)(-1)]\cdot 2}{4}
+%\end{deck}
+
+%\begin{deck}{A3} %products with variables, minus signs, natural numbers (no distributive law!)
+%	\pairm{(-1)(-2)}{2}
+%	\pairm{(-1)(-2)(-1)}{-2}
+%	\pairm{[(-2)(-1)]\cdot 2}{4}
+%	\pairm{-[(-z)\cdot (-y)]}{-(yz)}
+%	\pairm{(-3)[x(-y)]}{3xy}
+%	\pairm{2t-3t(x-t)\}{2t}
+%	\pairm{-(2z)\cdot(-(xy))}{2zyx}
+%	\pairm{-[(-x)\cdot y]}{yx}
+%	\pairm{y\cdot(-x)}{-(xy)}
+%	\pairm{(-2)[(-x)\cdot y]}{2xy}
+%	\pairm{-(-x)\cdot [-(-y)]}{xy}
+%	\pairm{(-x)(-y)(-z)}{-xyz}
+%	\pairm{(-2x)(-2y)(-2z)}{-8xyz}
+%	\pairm{0\cdot xy}{0}
+%	\pairm{-(-x)}{x}
+%	\pairm{-(-xt)}{xt}
+%	\pairm{(-2x)t}{-2xt}
+%	\pairm{(-2)\cdot (-x)(-y)}{-2xy}
+%\end{deck}
+
+
+%murtolukujen vähennyslasku tunnetuilla luvuilla
+%tunnetuilla kolme murtolukua yhteen...
+
+
+%murtolukujen yhteen- ja vähennyslasku tuntemattomilla (yksi symboli ja isompi lauseke) osoittajassa %pitää jakaa pienempiin osiin...
+%\begin{deck}{murto6}
+%\pairm{\frac{t}{2}+\frac{t}{2}}{t}
+%\pairm{\frac{t}{3}-\frac{t}{3}}{0}
+%\pairm{\frac{t}{4}+\frac{1}{2}}{\frac{t+2}{4}}
+%\pairm{\frac{1}{3}+\frac{t}{6}}{\frac{2+t}{6}}
+%\pairm{\frac{t}{3}+\frac{1}{4}}{\frac{4t+3}{12}}
+%\pairm{\frac{t+1}{3}+\frac{1}{4}}{\frac{4t+7}{12}}
+%\pairm{\frac{t}{4}+\frac{t}{5}}{\frac{9t}{20}}
+%\pairm{\frac{t+2}{5}+\frac{1}{6}}{\frac{6t+17}{30}}
+%\pairm{\frac{t+1}{2}+\frac{t+1}{4}}{\frac{3t+3}{4}}
+%\pairm{\frac{t}{3}+\frac{t+1}{7}}{\frac{10t+3}{21}}
+%\pairm{t+\frac{1}{7}}{\frac{7t+1}{7}}
+%\pairm{t+\frac{t}{7}}{\frac{8t}{7}}
+%\pairm{2+\frac{t}{7}}{\frac{14+t}{7}}
+%\pairm{3+\frac{t+2}{4}}{\frac{t+14}{4}}
+%\pairm{t+\frac{t+2}{4}}{\frac{5t+2}{4}}
+%\pairm{t+5+\frac{1}{4}}{\frac{4t+21}{4}}
+%\pairm{2t+1+\frac{2t+1}{9}}{\frac{20t+10}{9}}
+%\pairm{t-\frac{t+2}{4}}{\frac{3t-2}{4}}
+%\end{deck}
+
+
+%murtolukujen yhteen- ja vähennyslasku tuntemattomilla (yksi symboli ja isompi lauseke) nimittäjässä
+%\begin{deck}{murto7}
+
+%\end{deck}
+
+
+%\begin{deck}{murto3} %multiplication of true fractions shown as rectangular diagrams of equal size
+%\pairm{\dfrac{1}{6}}{
+%	\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%		\fill[color=gray] (0,0) rectangle (2*0.75,2);
+%		\draw[yscale=0.667, xscale=0.75] (0,0) grid (4,6);
+%		\end{tikzpicture}}\cdot
+%	\adjustbox{valign=m}{\begin{tikzpicture}[scale=0.5]
+%		\fill[color=gray] (1,0) rectangle (3,1);
+%		\draw (0,0) grid (3,4);
+%		\end{tikzpicture}}
+%}
+%\pairm{\dfrac{2}{6}}{\circlefrac{1}{2} \cdot \circfrac{4}{6}} %voi siirtää muualle
+%\end{deck}
+
+%\begin{deck}{set2} %sets and venn diagrams
+%	\pairm{}{}
+%\end{deck}
+
+%\begin{deck}{set1} %set arithmetic without real intervals or number sets
+%%	\pairm{\lbrace 1, 2, 3\rbrace \cap \mathbb{N}}{\lbrace 1, 2, 3\rbrace}
+%%	\pairm{\lbrace 1, 2, 3\rbrace \cup \mathbb{N}}{\mathbb{N}}
+%%	\pairm{\lbrace \text{omena}, \text{banaani}, \text{päärynä}\rbrace \cup \lbrace \text{banaani} \rbrace}{\lbrace \text{omena}, \text{banaani}, \text{päärynä}\rbrace}
+%%	\pairm{\lbrace \text{omena}, \text{banaani}, \text{päärynä}\rbrace \cap \lbrace \text{banaani} \rbrace}{\lbrace\text{banaani}\rbrace}
+%	\pairm{\lbrace \text{omena}, \text{banaani}, \text{päärynä}\rbrace \setminus \lbrace \text{banaani} \rbrace}{\lbrace \text{omena}, \text{päärynä}\rbrace}
+%%	\pairm{\lbrace 1,2 \rbrace \cap \lbrace 2, 4 \rbrace}{ \lbrace 2 \rbrace}
+%%	\pairm{\lbrace 1,2 \rbrace \cup \lbrace 2, 4 \rbrace}{ \lbrace 1, 2, 4 \rbrace}
+%	\pairm{\lbrace 1,2 \rbrace \setminus \lbrace 2, 4 \rbrace}{ \lbrace 1\rbrace}
+%%	\pairm{\lbrace \heartsuit \rbrace \cap \lbrace \spadesuit \rbrace }{\emptyset}
+%%	\pairm{\lbrace \heartsuit \rbrace \cup \lbrace \spadesuit \rbrace }{\lbrace \heartsuit, \spadesuit \rbrace}
+%	\pairm{\lbrace \heartsuit \rbrace \setminus \lbrace \spadesuit \rbrace }{\lbrace \heartsuit \rbrace}
+%%	\pairm{\mathbb{R} \setminus (\mathbb{R}_- \cup \lbrace0\rbrace )}{\mathbb{R}_+}
+%	\pairm{\mathbb{R}\setminus \mathbb{Q}}{\text{irrationaalilukujen joukko}}
+%	\pairm{\mathbb{R}\setminus \mathbb{R}_-}{\text{epänegatiivisten lukujen joukko}}
+%	\pairm{\mathbb{N}\setminus \mathbb{Q}}{\text{tyhjä joukko (ei sisällä alkioita)}}
+%	\pairm{\mathbb{Z}\setminus \mathbb{N}}{\text{epäpositiiviset kokonaisluvut}}
+%	\pairm{\mathbb{Z} \setminus \mathbb{Z}_-}{\text{epänegatiiviset kokonaisluvut}}
+%	\pairm{\mathbb{Z} \setminus \mathbb{Z}_- \setminus \lbrace0\rbrace}{\text{positiiviset kokonaisluvut}}
+%	\pairm{\mathbb{Z} \setminus \mathbb{Z}_- \setminus \mathbb{Z}_+}{\lbrace 0\rbrace}
+%%	\pairm{\mathbb{R} \cap \mathbb{R}_-}{\mathbb{R}_-}
+%%	\pairm{\mathbb{R}_+ \cup \lbrace 0 \rbrace}{\text{epänegatiiviset luvut}}
+%%	\pairm{\mathbb{R}\cup \mathbb{Q}}{\mathbb{R}}
+%%	\pairm{\mathbb{R}\setminus \lbrace 3 \rbrace}{]-\infty, 3[ \cup ]3, \infty[}
+%	\pairm{\mathbb{N}}{\lbrace1, 2, 3, ...\rbrace}
+%	\pairm{\lbrace 2, 3, 5, 7, 11, ...\rbrace}{\text{alkulukujen joukko}}
+%	\pairm{\lbrace k\in \mathbb{Z}_+ \mid \text{k on parillinen}\rbrace  }{\lbrace 2, 4, 6...\rbrace}
+%	\pairm{\lbrace x\in \mathbb{R} \mid0<x\leq2\rbrace }{]0, 2]}
+%	\pairm{0\leq x\leq2}{x\in[0, 2]}
+%	\pairm{x>0}{x\in ]0, \infty[}
+%	\pairm{x\geq 0}{x\in[0, \infty[}
+%	\pairm{x\leq 0}{x\in]-\infty, 0]}
+%\end{deck}
+%set arithmetic with number sets
+%set arithmetic with real intervals %esim. raja ja pois diskreetit
+%sets with Venn diagrams
+%tehdään toinen sarja, jossa lisää reaalilukuvälejä ja erilaisia tapoja esittää joukot ja kahden joukko-operaation kortteja
+
+%kvanttorit
+
+%\begin{deck}{log1} %propositional logic connectives
+%	\pair{$P$ ja $Q$}{$P \wedge Q$}
+%	\pair{sekä $P$ että $Q$}{$P \wedge Q$}
+%	\pair{Ei $ P $ eikä $ Q $}{$ \neg P \wedge \neg Q $}
+%	\pair{$P$ tai $Q$}{$P \vee Q$}
+%	\pair{$P$ tai $Q$ tai molemmat}{$P \vee Q$}
+%	\pair{joko $P$ tai $Q$ tai molemmat}{$P \vee Q$}
+%	\pair{$P$, mutta $Q$}{$P \wedge Q$}
+%	\pair{$P$, vaikka $Q$}{$P \wedge Q$}
+%	\pair{Jos $P$, niin $Q$}{$P \Rightarrow Q$}
+%	\pair{$P$, jos $Q$}{$Q \Rightarrow P$}
+%	\pair{$P$ vain, jos $Q$}{$P \Rightarrow Q$}
+%	\pair{$P$ aina sillä ehdolla, että $Q$}{$Q \Rightarrow P$}
+%	\pair{$P$, jos ja vain jos $Q$}{$P \Leftrightarrow Q$}
+%	\pair{$P$ aina, kun $Q$}{$Q \Rightarrow P$}
+%	\pair{$P$ on välttämätön ehto $Q$:lle}{$Q \Rightarrow P$}
+%	\pair{$P$ on riittävä ehto $Q$:lle}{$P \Rightarrow Q$}
+%	\pair{$P$ on riittävä ja välttämätön ehto $ Q $:lle}{$P \iff Q$}
+%	\pair{jos ei $P$, niin $Q$}{$\neg P \implies Q$}
+%\end{deck}
+
+%\begin{deck}{log2} %propositional logic 2
+%	\pairm{m}{m}
+%\end{deck}
+
+%\begin{deck}{bio1}
+%	\pair{osteoblasti}{rakentaa luukudosta}
+%	\pair{osteoklasti}{hajottaa luukudosta}
+%	\pair{adiposyytti}{varastoi rasvaa}
+%	\pair{neuroni}{välittää signaaleja hermostossa}
+%	\pair{erytrosyytti}{kuljettaa happea veressä}
+%	\pair{granulosyytti}{}
+%	\pair{leukosyytti}{}
+%	\pair{lymfosyytti}{}
+%	\pair{maljasolu?}{}
+%	\pair{Sertolin solu}{}
+%	\pair{gliasolu}{}
+%	\pair{}{}
+%	\pair{}{}
+%	\pair{}{}
+%	\pair{}{}
+%	\pair{}{}
+%	\pair{}{}
+%	\pair{}{}
+%\end{deck}
+
+
+%\begin{deck}{yhdistetyt2} %larger arbitrary natural numbers with power-like prime factorisation
+%
+%\end{deck}
+%
+%\begin{deck}{A10} %multiplication of fractions shown as diagrams
+%	\pair{}{}
+%\end{deck}
+
+%\begin{deck}{A1} %sum, subtraction, additive inverse, definition of subtraction with known integers
+%
+%\pairm{-2-(-5)}{3}
+%\pairm{5-(-2)}{7}
+%\pairm{2(6-1)}{10}
+%
+%\end{deck}
+
+
+%\begin{deck}{B1} %cancellation with only numbers
 %	
 %\pair{\dfrac{15}{9}}{\dfrac{5}{3}}
 %\pair{\dfrac{30}{4}}{\dfrac{15}{2}}
 %\pair{\dfrac{2\cdot5\cdot 7}{10\cdot 7 \cdot 8}}{\dfrac{1}{8}}
 %\pair{\dfrac{1}{2}\cdot \dfrac{2}{3}\cdot \dfrac{3}{4}}{\dfrac{1}{4}}
 %\pair{\dfrac{-570}{9}}{\dfrac{190}{-3}}
-%\pair{\dfrac{x}{y}:\dfrac{x^2}{y^2}:\dfrac{x^3}{y^3}}{\dfrac{y^4}{x^4}}
-%
-%\end{cards}
 
-%\begin{cards}{C}
+%
+%\end{deck}
+
+%\begin{deck}{B2} %cancellation with variables
+%	
+%\pair{\dfrac{x}{y}:\dfrac{x^2}{y^2}:\dfrac{x^3}{y^3}}{\dfrac{y^4}{x^4}}
+%\end{deck}
+
+%\begin{deck}{C} %equation plots
 %\pairg{y=x^2}{x**2}
 %\pairg{y=x^2}{1/x}
-%\end{cards}
+%\end{deck}
+
+%\begin{deck}{Ax} %definition of subtraction as sum, commutativity
+%\pairm{2-2x}{-2x+2}
+%\pairm{-x-(-\pi)}{\pi-x}
+%\end{deck}
+%
+%\begin{deck}{A4} %Verbal instructions for arithmetic expressions, incl. additive inverse but no quotient or multiplicative inverse
+%\pair{lukujen $ x $ ja $ y $ summa}{$ x+y $}
+%\pair{lukujen $ x $ ja $ y $ erotus}{$ x-y $}
+%\pair{lukujen $ x $ ja $ y $ tulo}{$ xy $}
+%\pair{lukujen $ x $ ja $ y $ tulon vastaluvun vastaluku}{$ -[-(xy)] $}
+%\pair{lukujen $ x $ ja $ y $ summan vastaluku}{$ -(x+y) $}
+%\pair{lukujen $ x $ ja $ y $ erotuksen vastaluku}{$ -(x-y) $}
+%\pair{lukujen $ x $ ja $ y $ tulon vastaluku}{$ -(xy) $}
+%\pair{lukujen $ x $ ja $ y $ vastalukujen summa}{$ (-x)+(-y)$}
+%\pair{lukujen $ x $ ja $ y $ vastalukujen erotus}{$ (-x)-(-y)$}
+%\pair{lukujen $ x $ ja $ y $ vastalukujen tulo}{$ (-x)(-y)$}
+%\pair{$ x $:n vastaluvun ja $ y $:n summa}{$ -x+y $}
+%\pair{$ x $:n vastaluvun ja $ y $:n erotus}{$ -x-y $}
+%\pair{$ x $:n vastaluvun ja $ y $:n tulo}{$ -x\cdot y $}
+%\pair{luvun $ x $ sekä $ y $:n vastaluvun summa}{$ x+(-y)$}
+%\pair{luvun $ x $ sekä $ y $:n vastaluvun summan vastaluku}{$ -[x+(-y)]$}
+%\pair{luvun $ x $ sekä $ y $:n vastaluvun erotus}{$ x-(-y)$}
+%\pair{luvun $ x $ sekä $ y $:n vastaluvun erotuksen vastaluku}{$ -[x-(-y)]$}
+%\pair{luvun $ x $ sekä $ y $:n vastaluvun tulo}{$ x(-y)$}
+%\end{deck}
+%
+%\begin{deck}{A5} %Verbal instructions for arithmetic expressions, incl. quotient and multiplicative inverse
+%	\pair{lukujen $ x $ ja $ y $ osamäärä}{$ \dfrac{x}{y} $}
+%	\pair{lukujen $ x $ ja $ y $ vastalukujen osamäärä}{$ \dfrac{-x}{-y} $}
+%	\pair{lukujen $ x $ ja $ y $ osamäärän vastaluku}{$ - \dfrac{x}{y} $}
+%	\pair{lukujen $ x $ ja $ y $ vastalukujen osamäärän vastaluku}{$-\dfrac{-x}{-y} $}
+%	\pair{lukujen $ x $ ja $ y $ käänteislukujen summa}{$ \dfrac{1}{x}+\dfrac{1}{y} $}
+%	\pair{lukujen $ x $ ja $ y $ käänteislukujen erotus}{$\dfrac{1}{x}-\dfrac{1}{y}$}
+%	\pair{lukujen $ x $ ja $ y $ osamäärän käänteisluku}{${\left(\dfrac{x}{y}\right)}^{-1} $}
+%	\pair{lukujen $ x $ ja $ y $ vastalukujen summan käänteisluku}{$ \left( (-x)+(-y)\right)^{-1}$}
+%	\pair{lukujen $ x $ ja $ y $ vastalukujen erotuksen käänteisluku}{$ \left( (-x)-(-y)\right)^{-1}$}
+%	\pair{$ x $:n vastaluvun ja $ y $:n käänteisluvun summa}{$ -x+\frac{1}{y}$}
+%	\pair{$ x $:n käänteisluvun ja $ y $:n vastaluvun summa}{$ \frac{1}{x}+(-y) $}
+%	\pair{$ x $:n käänteisluvun ja $ y $:n vastaluvun tulo}{$\dfrac{1}{x}\cdot(-y)$}
+%	\pair{lukujen $ x $ ja $ y $:n käänteislukujen tulo}{$ \dfrac{1}{x}\cdot\dfrac{1}{y} $}
+%	\pair{lukujen $ x $ ja $ y $ käänteislukujen osamäärä}{$ \dfrac{1}{x}:\dfrac{1}{y} $}
+%	\pair{lukujen $ x $ ja $ y $ käänteislukujen summan käänteisluku}{$ \dfrac{1}{\frac{1}{x}+\frac{1}{y}}$}
+%	\pair{lukujen $ x $ ja $ y $ käänteislukujen erotuksen käänteisluku}{$ \dfrac{1}{\frac{1}{x}-\frac{1}{y}}$}
+%	\pair{lukujen $ x $ ja $ y $ vastalukujen käänteislukujen summa}{$\dfrac{1}{-x}+\dfrac{1}{-y}$}
+%	\pair{lukujen $ x $ ja $ y $ vastalukujen käänteislukujen erotus}{$\dfrac{1}{-x}-\dfrac{1}{-y}$}
+%\end{deck}
 
 
+%potenssien tulon ... %tulon potenssin...
+%– kortit: annettu yhtälö ja operaatio, yhdistä seuraavaan vaiheeseen
+%– matikantehtäväksi sanallisia selityksiä: “mikä on lausekkeessa osoittajan ja nimittäjän yhteinen tekijä?” jne.
 
-%\begin{kortit}{H} %multiplication notation
+
+%\begin{kortit}{H} %multiplication notation and commutativity
 %\pair{9\cdot x}{9x}
+%\pair{x\cdot x}{xx}
 %\end{kortit}
-
-%\begin{cards}{B} %distributive law of whole numbers  (no powers,´or rational expressions)
 %
-%\pair{x(a-1)}{ax-x}
-%\pair{a(x-1)}{ax-a}
-%\pair{a(1-x)}{a-ax} 
-%\pair{x(1-a)}{x-ax}
+%\begin{deck}{I} %distributive law of whole numbers including minus sign in front of parentheses (no powers or rational expressions)
+%\pairm{x(a-1)}{ax-x}
+%\pairm{a(x-1)}{ax-a}
+%\pairm{a(1-x)}{a-ax} 
+%\pairm{x(1-a)}{x-ax}
+%\pairm{x-2(2x+4)}{-3x-8}
+%\pairm{x+x+x}{3\cdot x}
+%\pairm{2(2x-4)-x}{3x-8}
+%\pairm{-(1-x)-(1-x)}{-2(1-x)}
+%\pairm{-(2-y)}{y-2}
+%\pairm{-2(x+1)}{-2x-2}
+%\pairm{-2(x-1)}{-2x+2}
+%\pairm{-(-2+y)}{2-y}
+%\pairm{2t\cdot 0-3t(x-1)}{-3tx+3t}
+%\pairm{x+a(1+x)}{a+x(a+1)}
+%\pairm{2y(x-1)}{2xy-2y}
+%\pairm{2x(y-1)}{2xy-2x}
+%\pairm{x(y+1)-y(x+1)}{x-y}
+%\pairm{-(x-2)-(x-2)}{-2(x-2)}
+%\end{deck}
+
+
+%order of operations for whole numbers (no variables, no powers)
 %\pair{3-3\cdot3}{-6}
-%
-%\pair{3x+2x}{x+4x}
-%\pair{x-2(2x+4)}{-3x-8}
-%\pair{x+x+x}{3\cdot x}
-%\pair{2(2x-4)-x}{3x-8}
-%\pair{2t-3t(x-t)\cdot 0}{2t}
-%\pair{2(2x-4)-x}{3x-8}
-%\pair{-(1-x)-(1-x)}{-2(1-x)}
-%\pair{-(2-y)}{y-2}
-%\pair{-2(x+1)}{-2x-2}
-%\pair{-2(x-1)}{-2x+2}
-%\pair{-(-2+y)}{2-y}
-%\pair{2t\cdot 0-3t(x-1)}{-3tx+3t}
-%\pair{t(1-2)x}{-tx}
-%\pair{x+a(1+x)}{a+x(a+1)}
-%\pair{2y(x-1)}{2xy-2y}
-%\pair{2x(y-1)}{2xy-2x}
-%\pair{(x+y)(x+y)}{xx+2xy+yy}
-%\pair{(x-y)(x-y)}{xx-2xy+yy}
-%\pair{(x+y)(x-y)}{xx-yy}
-%\pair{x(y+1)-y(x+1)}{x-y}
-%\pair{-(x-1)-(x-1)}{-2x+2}
-%
-%\pair{2(2x-4)-x}{3x-8}
-%\end{cards} %54
-
-%\pair{2(6-1)}{10}
 %\pair{3\cdot3-3}{6}
 %\pair{(3-3)\cdot3}{0}
 
-%\begin{cards}{C}
-%\pair{y(y^2-1)}{y^3-y}
-%\pair{y^2(y-1)}{y^3-y^2}
-%\pair{y(y^2-1)}{(y^2+y)(y-1)}
-%\pair{(y+1)^2}{y^2+1+2y}
-%\pair{(y-1)^2}{y^2-2y+1}
-%\pair{(y+1)^3}{y^3+3y^2+3y+1}
-%\pair{(y+1)(y-1)}{y^2-1}
-%\pair{y(1-y)}{-y^2+y}
-%\pair{y^2-y}{y(y-1)}
-%\pair{(1-y)^2}{y^2+1-2y}
-%\pair{y-y(1-y)}{y^2}
-%\pair{y^2-y^2(1-y^2)}{y^4}
-%\pair{y^3\cdot y^2}{y^5}
-%\pair{(-1-y)y}{-y-y^2}
-%\pair{y-y^2}{(1-y)y}
-%\pair{y-y(y+1)}{-y^2}
-%\pair{y^2-y^2(y^2+1)}{-y^4}
-%\pair{y^2-4}{(y+2)(y-2)}
-%\end{cards}
+%
+%\begin{deck}{E} %lisää määrittelyjoukot?
 
-%
-%\begin{cards}{E} %lisää määrittelyjoukot?
-%
-%
-%\pair{\dfrac{1+x}{x}}{1+1/x}
-%\pair{1/(1+1/x))}{x/(x+1)}
-%
-%\pair{\dfrac{3x^2}{x}}{3x}
-%\pair{\dfrac{3x^2}{6x}}{\dfrac{x}{2}}
-%\pair{\dfrac{3x}{x^2}}{\dfrac{3}{x}}
-%\pair{\dfrac{6x}{3x^2}}{\dfrac{2}{x}}
-%
-%\pair{\dfrac{6x^2}{x}}{6x}
-%
-%\pair{\dfrac{x-1}{x^2-1}}{\dfrac{1}{x+1}}
-%\pair{\dfrac{x-1}{x^2-x}}{\dfrac{1}{x}}
-%\pair{\dfrac{x-1}{x^2-x^2}}{\text{ei määritelty}}
-%\pair{\dfrac{\dfrac{x^3}{10}}{\dfrac{x}{5}}}{\dfrac{x^2}{2}}
-%\pair{\dfrac{\dfrac{1+x}{x}}{\dfrac{x^2+x}{x^2}}}{1}
-%
-%\pair{\dfrac{x^2(x-1)}{x+1}\cdot \dfrac{x+1}{x^2}}{x-1}
-%\pair{(x-a)(x-b)(x-c)\cdot \ldots \cdot (x-å)}{0}
-%
-%\pair{\dfrac{1}{x}+\dfrac{1}{x^2}}{\dfrac{x+1}{x^2}}
-%\pair{\dfrac{1}{x}-\dfrac{1}{x^2}}{\dfrac{\dfrac{-2}{x^2}-\dfrac{-2}{x}}{2}}
-%\pair{\dfrac{1}{x}\cdot \dfrac{1}{x^2}}{\dfrac{1}{x^3}}
-%\pair{\dfrac{1}{x}:\dfrac{1}{x^2}}{x}
-%
-%
-%\pair{\dfrac{x^2-x+x(x+1)}{x^2}}{\dfrac{x-1+(x+1)}{x}}
-%
-%\pair{\dfrac{x-1}{x}+\dfrac{x+1}{x}}{2}
-%\pair{\dfrac{x-1}{x}-\dfrac{x+1}{x}}{-\dfrac{2}{x}}
-%\pair{\dfrac{x-1}{x}\cdot \dfrac{x+1}{x}}{1-\dfrac{1}{x^2}}
-%\pair{\dfrac{x-1}{x}:\dfrac{x+1}{x}}{\dfrac{x-1}{x+1}}
-%
-%\pair{\dfrac{x}{x-1}+\dfrac{x-1}{x}}{\dfrac{2x^2-2x+1}{x^2-x}}
-%\pair{\dfrac{x}{x-1}-\dfrac{x-1}{x}}{\dfrac{2x-1}{x^2-x}}
-%\pair{\dfrac{x}{x-1}\cdot \dfrac{x-1}{x}}{1}
-%\pair{\dfrac{x}{x-1}:\dfrac{x-1}{x}}{\dfrac{x^2}{x^2-2x+1}}
-%
-%\pair{(a-1/a):(1-1/a)}{a+1}
-%\end{cards}%54
-%\pair{\dfrac{3x}{x}}{3}
-%\pair{\dfrac{1}{3}x}{\dfrac{x}{3}}
-%\pair{\dfrac{\dfrac{5}{6}}{\dfrac{6}{5}}}{\dfrac{25}{36}}
+
+
+%\begin{deck}{M6}%assign domain to expression
+%\pair{$x^2$}{$ x \in \mathbb{R} $}
+%\pair{$x^2-1$}{$ x\in \mathbb{R} $}
+%\end{deck}
 
 
 
 
-%\begin{cards}{M} %pari, muutama aksioomaa ja laskusääntöä, ei käänteislukua tai osittelulakia, kertolasku luonnollisilla
+%\begin{deck}{M} %pari, muutama aksioomaa ja laskusääntöä, ei käänteislukua tai osittelulakia, kertolasku luonnollisilla
 %
 %
-%\end{cards}
+%\end{deck}
 
 
-
+%kertolaskuaksioomia \pair{t(1-2)x}{-tx}
 
 %\pair{\dfrac{x-1}{1-x}}{-1} %B:tä jo?
 
-
+%\pairm{x+(-2)}{x-2}
 %paljon murtolukuja eri muodoissa
 %
 %kertomerkki -yms. merkitsemiskäytännöt, selvä ero pystyyn kirjoitetutlle ja kursiiville
@@ -243,11 +582,6 @@
 
 %
 %
-%\pair{(-1)(-2)}{2}
-%
-%\pair{(-1)(-2)(-1)}{-2}
-
-%
 %
 %\kB{\dfrac{5}{10}}{\dfrac{6}{10}}
 %
@@ -256,104 +590,274 @@
 %\setcounter{lauseke}{1}
 %
 
-%\pair{1\frac{1}{2}}{1+\frac{1}{1}} %+murtoluvusta desimaaliiin jne.
 
-%mikä aksiooma?
-%\begin{kortit}{E}
-%%\pair{2+3}{3+2}
-%%\pair{x+y}{y+x}
-%\pair{x^2+3}{3+x^2}
-%\pair{(-1)+3}{3+(-1)}
-%\pair{(1+2)+3}{3+(1+2)}
-%\pair{(a+b)+c}{(b+a)+c}
-%\pair{(a+b)+c}{a+(b+c)}
-%\pair{(a+b)+c}{c+(a+b)}
-%\pair{-a+b}{b+(-a)}
-%\pair{\dfrac{1+x}{x}}{\dfrac{x+1}{x}}
-%\pair{-\pi+x^5}{x^5+(-\pi)}
-%\pair{2\sin(x)+\sqrt{y}}{\sqrt{y}+2\sin(x)}
-%
-%\pair{b+(-b)}{b-b}
-%
-%\pair{b+(-b)}{0}
-%
-%\pair{x+(-y)}{x-y}
-%
-%\pair{(y+(-7))+x}{y+(-7)+x}
-%\pair{(y+(-7))+x}{y+((-7)+x)}
-%\pair{(y+(-7))+x}{((-7)+y)+x}
-%\pair{(y+(-7))+x}{(y-7)+x}
-%\pair{(y+(-7))+x}{x+(y+(-7))}
-%
-%\end{kortit}
 
-%\begin{kortit}{J} %vastaluku ja vähennyslaskun määritelmä
-%\pair{x+(-1)}{x-1}
-%\pair{-x+(-1)}{-x-1}
-%\pair{-x-(-1)}{1-x}
-%\pair{1-(-x)}{1+x}
-%\pair{-2-x}{-2+(-x)}
-%\pair{2-(+x)}{2-x}
-%\pair{2-(+7)}{-5}
-%\pair{7-(+2)}{5}
-%\pair{5-(-7)}{12}
-%\pair{-(-x)-y}{x-y}
-%\pair{-(-y)}{y}
-%\pair{+(-y)}{-y}
-%\pair{+(+y)}{+y}
-%\pair{-(+y)}{-y}
-%\pair{2-(-x)-(-y)}{2+x+y}
-%\pair{3-2-1}{3+(-2)+(-1)}
-%\pair{3-2-1}{3-2+(-1)}
-%\pair{3-2-1}{3+(-2)-1}
-%\end{kortit}
+%random osittelulakeja
+%\pairm{x\cdot x-x}{(x-1)\cdot x}
+%\pairm{-(x-2)}{2-x}
+%\pairm{(x-1)-(1-x)}{2x-2}
+%\pairm{1-(1-x)}{x}
+%\pairm{x-x\cdot(1-x)}{x\cdot x}
 
-%\begin{kortit}{K} %kertolaskuaksioomia yms.
-%\pair{2\cdot 3}{3\cdot 2}
-%\pair{1(2y-5)}{2y-5}
-%\pair{1x}{x1}
-%\pair{(x+1)y}{y(x+1)}
-%\pair{2(x-1)x}{2x(x-1)}
-%\pair{(-1)\cdot(x+1)}{(x+1)\cdot (-1)}
-%\pair{(2\cdot(x+1))\cdot y}{2\cdot((x+1)\cdot y)}
-%\pair{2x}{x2}
-%\pair{(1-x)(x-1)}{(x-1)(1-x)}
-%\pair{((1-x)(x-1))(1+x)}{(1-x)((x-1)(1+x))}
-%\pair{((1-x)(x-1))(1+x)}{((x-1)(1-x))(1+x)}
-%\pair{(x-x)0}{0(x-x)}
-%\pair{(x-x)0}{0\cdot0}
-%\pair{(x+(-x))0}{(x-x)0}
-%\pair{\left[1(x+1)\right](x-1)}{(x+1)(x-1)}
-%\pair{\left[1(x+1)\right](x-1)}{1\left[(x+1)(x-1)\right]}
-%\pair{\left[1(x+1)\right](x-1)}{1\left[(x-1)(x+1)\right]}
-%\pair{\left[1(x+1)\right](x-1)}{1(x-1)(x+1)}
-%\end{kortit}
+ %+murtoluvusta desimaaliiin jne. %\pairm{1\frac{1}{2}}{1+\frac{1}{1}}
+
+%yhteenlaskuaksioomia
+%\begin{deck}{J}
+%\pairm{2+3}{3+2}
+%\pairm{x^2+3}{3+x^2}
+%\pairm{(-1)+3}{3+(-1)}
+%\pairm{(1+2)+3}{3+(1+2)}
+%\pairm{(a+b)+c}{(b+a)+c}
+%\pairm{(a+b)+c}{a+(b+c)}
+%\pairm{(a+b)+c}{c+(a+b)}
+%\pairm{-a+b}{b+(-a)}
+%\pairm{\dfrac{1+x}{x}}{\dfrac{x+1}{x}}
+%\pairm{-\pi+x^5}{x^5+(-\pi)}
+%\pairm{2\sin(x)+\sqrt{y}}{\sqrt{y}+2\sin(x)}
+%\pairm{b+(-b)}{b-b}
+%\pairm{b+(-b)}{0}
+%\pairm{x+(-y)}{x-y}
+%\pairm{(y+(-7))+x}{y+((-7)+x)}
+%\pairm{(y+(-7))+x}{((-7)+y)+x}
+%\pairm{(y+(-7))+x}{(y-7)+x}
+%\pairm{(y+(-7))+x}{x+(y+(-7))}
+%\end{deck}
+
+%\begin{deck}{K} %kertolaskuaksioomia %VÄHENNÄ TOISTOA
+%\pairm{2\cdot 3}{3\cdot 2}
+%\pairm{1(2y-5)}{2y-5}
+%\pairm{1x}{x1}
+%\pairm{(x+1)y}{y(x+1)}
+%\pairm{2(x-1)x}{2x(x-1)}
+%\pairm{(-1)\cdot(x+1)}{(x+1)\cdot (-1)}
+%\pairm{(2\cdot(x+1))\cdot y}{2\cdot((x+1)\cdot y)}
+%\pairm{2x}{x\cdot2}
+%\pairm{(1-x)(x-1)}{(x-1)(1-x)}
+%\pairm{((1-x)(x-1))(1+x)}{(1-x)((x-1)(1+x))}
+%\pairm{((1-x)(x-1))(1+x)}{((x-1)(1-x))(1+x)}
+%\pairm{(x-x)\cdot0}{0\cdot(x-x)}
+%\pairm{(x-x)\cdot0}{0\cdot0}
+%\pairm{(x+(-x))\cdot0}{(x-x)\cdot0}
+%\pairm{\left[1(x+1)\right](x-1)}{(x+1)(x-1)}
+%\pairm{\left[1(x+1)\right](x-1)}{1\left[(x+1)(x-1)\right]}
+%\pairm{\left[1(x+1)\right](x-1)}{1\left[(x-1)(x+1)\right]}
+%\pairm{\left[1(x+1)\right](x-1)}{1(x-1)(x+1)}
+%\end{deck}
 
 %lisää aksioomia
 
-%ovatko lausekkeet yhtä suuret
-%\begin{cards}{D}
-%\pair{x\cdot x-x}{(x-1)\cdot x}
-%\pair{-(x-2)}{2-x}
-%\pair{\dfrac{x}{2}}{\dfrac{3}{6}\cdot x}
-%\pair{\dfrac{2}{x}:(2-x)}{\dfrac{2}{2x- x\cdot x}}
-%\pair{\dfrac{x+2}{x}}{1+\dfrac{2}{x}}
-%\pair{\dfrac{x-x}{1+x}}{0}
-%\pair{x+(-2)}{x-2}
-%\pair{x-\dfrac{x-1}{2}}{\dfrac{x+1}{2}}
-%\pair{(x-1)-(1-x)}{2x-2}
-%\pair{\dfrac{x\cdot x-1}{x-1}}{x+1}
-%\pair{\dfrac{4}{2x}:\dfrac{1}{x}}{2}
-%\pair{x-x\cdot(1-x)}{x\cdot x}
-%\pair{\dfrac{xxxx}{xx}}{xx}
-%\pair{\dfrac{xxx}{xxxx}}{\dfrac{1}{x}}
-%\pair{1-(1-x)}{x}
-%\pair{x\cdot \dfrac{1}{x}}{1}
-%\pair{\dfrac{\frac{1}{x}}{x}}{\dfrac{1}{x\cdot x}}
-%\pair{\dfrac{1}{\frac{1}{x}}}{x}
-%\end{cards}
+
+%\begin{deck}{L} %sievennä murtolauseke 1
+%	\pairm{\dfrac{45}{5}}{9}
+%	\pairm{\dfrac{65}{39}}{\dfrac{5}{3}}
+%	\pairm{\dfrac{3k}{k}}{3}
+%	\pairm{\dfrac{1}{3}k}{\dfrac{k}{3}}
+%	\pairm{\dfrac{k}{3k}}{\dfrac{1}{3}}
+%	\pairm{\dfrac{5}{6}+\dfrac{6}{5}}{\dfrac{61}{30}}
+%	\pairm{\dfrac{5}{6}-\dfrac{6}{5}}{-\dfrac{11}{30}}
+%	\pairm{\dfrac{5}{6}\cdot\dfrac{6}{5}}{1}
+%	\pairm{\dfrac{5}{6}:\dfrac{6}{5}}{\dfrac{25}{36}}
+%	\pairm{\dfrac{5}{n}+\dfrac{1}{5}}{\dfrac{25+n}{5n}}
+%	\pairm{\dfrac{5}{n}-\dfrac{1}{5}}{\dfrac{25-n}{5n}}
+%	\pairm{\dfrac{5}{n}\cdot\dfrac{1}{5}}{\dfrac{1}{n}}
+%	\pairm{\dfrac{5}{n}:\dfrac{1}{5}}{\dfrac{25}{n}}	
+%\pairm{x\cdot \dfrac{1}{x}}{1}
+%\pairm{\dfrac{x}{2}}{\dfrac{3}{6}\cdot x}
+%\pairm{\dfrac{\frac{1}{x}}{x}}{\dfrac{1}{x^2}}
+%\pairm{\dfrac{1}{\frac{1}{x}}}{x}
+%\pairm{\dfrac{4}{2x}:\dfrac{1}{x}}{2}
+%\end{deck}
+
+%murtolausekesievennyksiä 2
+\begin{deck}{M}
+\pairm{\dfrac{2x+6}{2}}{x+3}
+\pairm{\dfrac{2x+6}{x+3}}{2}
+\pairm{\dfrac{8x+12}{4}}{2x+3}
+\pairm{\dfrac{8x+12}{2x+3}}{4}
+\pairm{\dfrac{2x+6}{4}}{\dfrac{x+3}{2}}
+\pairm{\dfrac{2}{y}:(2-y)}{\dfrac{2}{2y- y^2}}
+\pairm{\dfrac{y+2}{y}}{1+\dfrac{2}{y}}
+\pairm{\dfrac{y-y}{1+x}}{0}
+\pairm{y^2:\dfrac{1}{y}}{y^3}
+\pairm{1:y^2:\dfrac{1}{y}}{\frac{1}{y}}
+\pairm{\dfrac{1}{y}:y^2}{\frac{1}{y^3}}
+\pairm{z-\dfrac{z-1}{2}}{\dfrac{z+1}{2}}
+\pairm{z-\dfrac{z-1}{3}}{\dfrac{2z+1}{3}}
+\pairm{-\dfrac{z-2}{2}}{1-\dfrac{z}{2}}
+\pairm{\dfrac{z(z-1)}{z}}{z-1}
+\pairm{\dfrac{2z^2-2z}{z}}{2z-2}
+\pairm{\dfrac{2z^2-2z}{2z-2}}{z}
+\pairm{\dfrac{2z^2-2z}{2}}{z^2-z}
+\end{deck}
+
+\begin{deck}{N}
+\pairm{y(y^2-1)}{y^3-y}
+\pairm{y^2(y-1)}{y^3-y^2}
+\pairm{y(y^2-1)}{(y^2+y)(y-1)}
+\pairm{(y+1)^2}{y^2+1+2y}
+\pairm{(y-1)^2}{y^2-2y+1}
+\pairm{(y+1)^3}{y^3+3y^2+3y+1}
+\pairm{(y+1)(y-1)}{y^2-1}
+\pairm{y(1-y)}{-y^2+y}
+\pairm{y^2-y}{y(y-1)}
+\pairm{(1-y)^2}{y^2+1-2y}
+\pairm{y-y(1-y)}{y^2}
+\pairm{y^2-y^2(1-y^2)}{y^4}
+\pairm{y^3\cdot y^2}{y^5}
+\pairm{(-1-y)y}{-y-y^2}
+\pairm{y-y^2}{(1-y)y}
+\pairm{y-y(y+1)}{-y^2}
+\pairm{y^2-y^2(y^2+1)}{-y^4}
+\pairm{y^2-4}{(y+2)(y-2)}
+\end{deck}
+
+\begin{deck}{O}
+\pair{yhteenlaskun liitännäisyys}{$ (a+s)+d=a+(s+d) $}
+\pair{vähennyslasku}{$ \heartsuit-\spadesuit=\heartsuit+(-\spadesuit) $}
+\pair{osittelulaki}{$ y(z+x)=yz+yx $}
+\pair{laventaminen}{$ \dfrac{f}{g}=\dfrac{kf}{kg} $}
+\pair{samankantaisten potenssien tulo}{$ t^xt^y=t^{x+y} $}
+\pair{samankantaisten potenssien osamäärä}{$ \dfrac{w^a}{w^b}=w^{a-b} $}
+\pair{tulon potenssi}{$ (st)^a=s^at^a $}
+\pair{osamäärän potenssi}{$ \left (\dfrac{m}{n}\right )^q=\dfrac{m^q}{n^q} $}
+\pair{potenssin potenssi}{$ (s^r)^t = s^{rt}$}
+\end{deck}
+
+\begin{deck}{P}%power rules 1, no fractional powers
+\pairm{g^4g^4}{g^{2^3}}
+\pairm{g^8g^2}{g^3g^7}
+\pairm{{g^3}^2}{g^9}
+\pairm{(g^3)^2}{g^6}
+\pairm{\frac{g^{400}}{g^{250}}}{g^{150}}
+\pairm{\frac{g^{250}}{g^{400}}}{g^{-150}}
+\pairm{\frac{10^g}{10^{g-1}}}{10}
+\pairm{\left( \frac{g}{2}\right )^{10}}{\frac{g^{10}}{1024}}
+\pairm{(2g)^{10}}{1024g^{10}}
+\end{deck}
+
+\begin{deck}{Q}%power rules 2 – with roots and fractional powers
+\pairm{\sqrt{\sqrt{x}}}{\sqrt[4]{x}}
+\pairm{\sqrt{4^x}}{2^x}
+\pairm{\sqrt{2^x}}{2^{\frac{1}{2}x}}
+\pairm{\sqrt{9^x}}{3^x}
+\pairm{\sqrt{(x^2)^3}}{x^3}
+\pairm{\sqrt{\sqrt[3]{\sqrt[4]{x}}}}{x^\frac{1}{24}}
+\pairm{\sqrt[x]{x^x}}{x}
+\pairm{(-2)^\frac{2}{3}}{\text{ei hyvin määritelty}}
+\pairm{x^{\frac{1}{2}+\frac{1}{3}}}{(x^\frac{5}{2})^\frac{1}{3}}
+\end{deck}
+
 %
-%\begin{cards}{L}
+%JOSTAIN SYYSTÄ \CE RIKKOO PAIR-KOMENNNON... MIKSI???
+
+%\begin{deck}{Ke1} % molecular formula with structural formula 1
+%%\pair{\chemfig{-}}{\ce{C2H6}}
+%%\pair{\chemfig{=}}{\ce{C2H4}}
+%%\pair{\chemfig{~}}{\ce{C2H2}}
+%%\pair{\chemfig{-[:30]-[:-30]}}{\ce{C3H8}}
+%%\pair{\chemfig{N~N}}{\ce{N2}}
+%%\pair{\chemfig{-[:30]NH_2}}{\ce{CH5N}}
+%%\pair{\chemfig{-[:30]OH}}{\ce{CH4O}}
+%%\pair{\chemfig{-[:30]O-[:-30]}}{\ce{C2H6O}}
+%%\pair{\chemfig{*4(----)}}{\ce{C4H8}}
+%%\pair{\chemfig{*6(------)}}{\ce{C6H12}}
+%%\pair{\chemfig{*6(=-=-=-)}}{\ce{C6H6}}
+%%\pair{\small\chemfig{*5(---(-OH)--)}}{\ce{C5H10O}}
+%%\pair{\chemfig{-[:60]=[0]-[:-60]}}{\ce{C4H8}}
+%%\pair{\chemfig{-[:60]=[0](-[:60]F)-[:-60]}}{\ce{C4H7F}}
+%%\pair{\small\chemfig{*6(---(<Cl)-(<:Cl)--)}}{\ce{C6H10Cl2}}
+%%\pair{\small\chemfig{*6(---(<:Cl)-(<:Cl)--)}}{\ce{C6H10Cl2}}
+%%\pair{\chemfig{-[:30](-[:60])(<:[:120]H)<[:-30]F}}{\ce{C3H7F}}
+%%\pair{\chemfig{-[:30](-[:60]Cl)(<:[:120]H)<[:-30]F}}{\ce{C2H4ClF}}
+%\end{deck}
+
+%\begin{deck}{Ke2} %skeletal formula and condensed formula
+%\pair{\chemfig{-}}{\ce{CH3CH3}}
+%\pair{\chemfig{=}}{\ce{CH2CH2}}
+%\pair{\chemfig{-[:30](-[2]OH)-[:-30]}}{\ce{CH3CH(OH)CH3}}
+%\pair{\chemfig{-[:30]-[:-30]}}{\ce{CH3CH2CH3}}
+%\pair{\chemfig{-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]}}{\ce{CH3(CH2)5CH3}}
+%\pair{\chemfig{-[:30](-[2])-[:-30]-[:30]}}{\ce{(CH3)2CHCH2CH3}}
+%\pair{\chemfig{-[:30]\chemabove{N}{H}-[:-30]-[:30]}}{\ce{CH3NHCH2CH3}}
+%\pair{\chemfig{-[:30]OH}}{\ce{CH3OH}}
+%\pair{\chemfig{-[:30]O-[:-30]}}{\ce{CH3OCH3}}
+%\end{deck}
+
+%\begin{deck}{Ke3} %structural/constitutional isomers
+%\pair{\chemfig{*5(-----)}}{\chemfig{*4(---(-)-)}}
+%\pair{\chemfig{*6(------)}}{\chemfig{*5(---(-)--)}}
+%\pair{\chemfig{-[:30]-[:-30]-[:30]}}{\chemfig{-[:30](-[:120])-[:-30]}}
+%\pair{\chemfig{-[:30]O-[:-30]}}{\chemfig{-[:30]-[:-30]OH}}
+%\pair{\chemfig{-[:30]-[:-30]NH_2}}{\chemfig{-[:30]\chemabove{N}{H}-[:-30]}}
+%\pair{\chemfig{-[:30](=[2]O)-[:-30]}}{\chemfig{-[:30]-[:-30]=[6]O}}
+%\pair{\chemfig{*6(-=--=-)}}{\chemfig{*6(-=-=--)}}
+%\pair{\chemfig{*4(--(=O)--)}}{\chemfig{*5(--O--=)}}
+%\pair{\chemfig{-[:30](=[2]O)-[:-30]-[:30]OH}}{\chemfig{-[:30]-[:-30]([:30]-OH)=[6]O}}
+%\end{deck}
+
+%\begin{deck}{C4}%pair structural formulas with their enantiomers
+%\pair{\chemfig{}}{\chemfig{}}
+%\end{deck}
+%
+%\begin{deck}{C5}%pair structural formulas with their E-Z-isomers
+%\pair{\chemfig{}}{\chemfig{}}
+%\end{deck}
+%
+%\begin{deck}{C6}%pair structural formulas with their E-Z-isomers
+%\pair{\chemfig{}}{\chemfig{}}
+%\end{deck}
+
+
+%\pairm{\dfrac{xxxx}{xx}}{xx}
+%\pairm{\dfrac{xxx}{xxxx}}{\dfrac{1}{x}}
+
+
+
+%\pairm{\dfrac{x\cdot x-1}{x-1}}{x+1}
+
+
+%\begin{deck}{työläs}
+%\pairm{\dfrac{1+x}{x}}{1+1/x}
+%\pairm{1/(1+1/x)}{x/(x+1)}
+%
+%\pairm{\dfrac{3x^2}{x}}{3x}
+%\pairm{\dfrac{3x^2}{6x}}{\dfrac{x}{2}}
+%\pairm{\dfrac{3x}{x^2}}{\dfrac{3}{x}}
+%\pairm{\dfrac{6x}{3x^2}}{\dfrac{2}{x}}
+%
+%\pairm{\dfrac{6x^2}{x}}{6x}
+%
+%\pairm{\dfrac{x-1}{x^2-1}}{\dfrac{1}{x+1}}
+%\pairm{\dfrac{x-1}{x^2-x}}{\dfrac{1}{x}}
+%\pairm{\dfrac{x-1}{x^2-x^2}}{\text{ei määritelty}}
+%\pairm{\dfrac{\dfrac{x^3}{10}}{\dfrac{x}{5}}}{\dfrac{x^2}{2}}
+%\pairm{\dfrac{\dfrac{1+x}{x}}{\dfrac{x^2+x}{x^2}}}{1}
+%
+%\pairm{\dfrac{x^2(x-1)}{x+1}\cdot \dfrac{x+1}{x^2}}{x-1}
+%%\pairm{(x-a)(x-b)(x-c)\cdot \ldots \cdot (x-å)}{0}
+%
+%\pairm{\dfrac{1}{x}+\dfrac{1}{x^2}}{\dfrac{x+1}{x^2}}
+%\pairm{\dfrac{1}{x}-\dfrac{1}{x^2}}{\dfrac{\dfrac{-2}{x^2}-\dfrac{-2}{x}}{2}}
+%\pairm{\dfrac{1}{x}\cdot \dfrac{1}{x^2}}{\dfrac{1}{x^3}}
+%\pairm{\dfrac{1}{x}:\dfrac{1}{x^2}}{x}
+%
+%\pairm{\dfrac{x^2-x+x(x+1)}{x^2}}{\dfrac{x-1+(x+1)}{x}}
+%
+%\pairm{\dfrac{x-1}{x}+\dfrac{x+1}{x}}{2}
+%\pairm{\dfrac{x-1}{x}-\dfrac{x+1}{x}}{-\dfrac{2}{x}}
+%\pairm{\dfrac{x-1}{x}\cdot \dfrac{x+1}{x}}{1-\dfrac{1}{x^2}}
+%\pairm{\dfrac{x-1}{x}:\dfrac{x+1}{x}}{\dfrac{x-1}{x+1}}
+%
+%\pairm{\dfrac{x}{x-1}+\dfrac{x-1}{x}}{\dfrac{2x^2-2x+1}{x^2-x}}
+%\pairm{\dfrac{x}{x-1}-\dfrac{x-1}{x}}{\dfrac{2x-1}{x^2-x}}
+%\pairm{\dfrac{x}{x-1}\cdot \dfrac{x-1}{x}}{1}
+%\pairm{\dfrac{x}{x-1}:\dfrac{x-1}{x}}{\dfrac{x^2}{x^2-2x+1}}
+%
+%\pairm{(a-1/a):(1-1/a)}{a+1}
+%\end{deck}%54
+
+%
+%\begin{deck}{L}
 %\pair{y=x^3-x}{
 %\begin{tikzpicture}[smooth, scale=0.5] %domain=-1.75:1.75, 
 %    \draw[very thin,color=gray] (-4,-4) grid (4,4);
@@ -435,46 +939,265 @@
 %}
 %
 %
-%%\pairg{y=x^3-x}{x**3-2*x}{2}
-%\end{cards}
-
-\begin{cards}{R}
-
-\pair{reaktio rakenteilla}{reaktionimi}
-
-\end{cards}
+%\end{deck}
 
 
-%\begin{cards}{D} %trigonometric identities
+
+%\begin{deck}{R}
+%
+%\pair{\chemfig{H_2C=CH_2 }}{additio}
+%
+%\end{deck}
+
+
+
+
+
+%\begin{deck}{D} %trigonometric identities
 %\pair{\sin^2 x + \cos^2 x}{1}
 %\pair{\cos^2 x \sin x + \sin^3 x}{\sin x}
-%\end{cards}
+%\end{deck}
+
+%\begin{deck}{F1} %yhdistä kaavan nimi tai merkintä kaavaan
+%\pair{paino}{$\vv{G}=m\vv{g}$}
+%\pair{Newton II}{$\sum \vv{F}_i=m\vv{a}$}
+%\pair{jousen potentiaalienergia}{$\Delta E_\text{p}=\dfrac{1}{2}k(\Delta x)^2$}
+%\pair{harmoninen voima}{$\vv{F}=-k\Delta \vv{x}$}
+%\pair{Newton III}{$ \vv{F}_{12}=-\vv{F}_{21} $}
+%\pair{etenemisen liike-energia}{$E_\text{k}=\dfrac{1}{2}mv^2$}
+%\pair{painovoiman potentiaalienergia\\ (approksimaatio)}{$ \Delta E_\text{p}=mg\Delta h $}
+%\pair{mekaanisen energian säilymislaki}{$ \Delta E_\text{p}+\Delta E_\text{k}=0$}
+%\pair{energian säilymislaki}{$ \sum E=\text{vakio (ajassa)} $}
+%\pair{Newton I}{$ \sum \vv{F}=\vv{0} \Rightarrow (\vv{a}=\vv{0} \Longleftrightarrow \vv{v}=\text{vakio})$}
+%\pair{Newtonin painovoimalaki}{$G=\gamma\dfrac{m_1m_2}{r^2}$}
+%\pair{noste painovoimakentässä}{$ \vv{N}=\rho V \vv{g} $}
+%\pair{normaali-ilmanpaine}{$ p_0 $}
+%\pair{hydrostaattinen paine}{$p=\rho g h$}
+%\pair{voiman tekemä työ}{$ W=\int\vv{F}\cdot \d\vv{s} \approx Fs$}
+%\pair{teho}{$P=\dfrac{\d E}{\d t}$}
+%\pair{liukukitka}{$ F_\upmu=\mu N $}
+%\pair{paine}{$ P=\dfrac{F}{A} $}
+%\pair{lepokitka}{$ F_{\upmu_0}=\mu_0 N $}
+%\pair{keskinopeus}{$ \vv{v}_\text{k}=\dfrac{\Delta \vv{x}}{\Delta t} $}
+%\pair{keskikiihtyvyys}{$ \vv{a}_\text{k}=\dfrac{\Delta \vv{v}}{\Delta t} $}
+%\pair{(hetkellinen) nopeus}{$ \vv{v}=\dfrac{\dd \vv{x}}{\dd t} $}
+%\pair{(hetkellinen) kiihtyvyys}{$ \vv{a}=\dfrac{\dd \vv{v}}{\dd t} $}
+%\pair{liikemäärän säilymislaki}{$ \sum \vv{p}_\text{alussa} =\sum \vv{p}_\text{lopussa}$}
+%\pair{impulssi}{$\vv{I}=\vv{F}\Delta t=\Delta \vv{p}$}
+%\pair{Coulombin laki}{$ F=\dfrac{q_1q_2}{4\pi\epsilon_\text{r}\epsilon_0r^2} $}
+%\pair{sijainti tasaisessa kiihdytyksessä}{$ \vv{x}=\vv{x}_0+\vv{v}_0 \Delta t+\dfrac{1}{2}\vv{a}(\Delta t)^2 $}
+%\pair{nopeus tasaisessa kiihdytyksessä}{$ \vv{v}=\vv{v}_0+\vv{a}\Delta t $}
+%\end{deck}
 
 
 
 %todo: funktio- derivaattafunktioparit kuvaajien avulla
 
 %todo (lopulta) korttipakan generointi niin, että on voinut valita flagit aksioomittain, merkinnöittäin, laskutoimituksittain jne.
-%todo: vaihdantalakia ja liitäntälakia!
 
-%\begin{kortit}{F}
-%\pair{V(r)=\dfrac{4}{3}\pi r^3}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{v(t)=\dfrac{s}{t}}{\mathbb{R}_+ \rightarrow \mathbb{R}}
-%\pair{v(s)=\dfrac{s}{t}}{\mathbb{R} \rightarrow \mathbb{R}}
-%\pair{s(t)=vt}{\mathbb{R}_+ \rightarrow \mathbb{R}}
-%\pair{s(v)=vt}{\mathbb{R} \rightarrow \mathbb{R}}
-%\pair{F(m)=ma}{\mathbb{R}_+ \rightarrow \mathbb{R}}
-%\pair{T(l)=2\pi \sqrt{\dfrac{l}{g}}  }{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{\rho(m)=\dfrac{m}{V} }{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{\rho(V)=\dfrac{m}{V}}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{ N(V)=\rho V g}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{ E(v)=\dfrac{1}{2}mv^2}{\mathbb{R} \rightarrow \mathbb{R}_+}
-%\pair{ P(t)=\dfrac{E}{t}}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{F(r)=\gamma \dfrac{m_1m_2}{r^2} }{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{ \lambda(m)=\left( R_\mathrm{H} \left(\dfrac{1}{m^2}-\dfrac{1}{n^2}\right) \right)^{-1} $\vfill$ R_\mathrm{H}>0 $\vfill$ m,n\in \mathbb{N} }{\mathbb{N} \rightarrow \mathbb{R}_+}
-%\pair{E(m)=mc^2$ \vfill $\mathrm{c=valonnopeus}}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{T_{\frac{1}{2}}(\lambda)=\dfrac{\ln 2}{\lambda} $ \vfill $ \lambda>0}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{N(t)=N_0e^{-\lambda t}$ \vfill $\lambda, N_0>0}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
-%\pair{f(b)=\left(\dfrac{1}{a}+\dfrac{1}{b}\right)^{-1} $\vfill$ a,b\in \mathbb{R}\setminus \lbrace 0 \rbrace}{\mathbb{R}\setminus \lbrace 0 \rbrace \rightarrow \mathbb{R} \setminus \lbrace 0 \rbrace}
-%\end{kortit}
 
+
+
+
+\begin{deck}{R}%unit conversions – magnitudes and coefficients 1
+\pairm{\mathrm{kg}}{1\,000\,\mathrm{g}}
+\pairm{\mathrm{km}}{\text{miljoona}\,\mathrm{mm}}
+\pairm{1\mathrm{dm^3}}{1\,\mathrm{l}}
+\pairm{\mathrm{fl}}{10^{-15}\,\mathrm{l}}
+\pairm{10\,\mathrm{dm^3}}{100\,\mathrm{dl}}
+\pairm{\mathrm{\upmu m}}{10^{-6}\,\mathrm{m}}
+\pairm{\mathrm{\upmu l}}{\mathrm{mm^3}}
+\pairm{\mathrm{ha}}{10\,000\,\mathrm{m^2}}
+\pairm{\mathrm{m^3}}{10^6\,\mathrm{ml}}
+\end{deck}
+
+%\begin{deck}{I}
+%	\pair{Lausekkeen $ \frac{x+7}{x} $ osoittajan ja nimittäjän yhteinen tekijä?}{ei hyvin määritelty}
+%	\pair{Lausekkeen $ xy+xz$ termien yhteinen tekijä?}{$ x $}
+%\end{deck}
+
+
+\begin{deck}{S}%linear equations 1
+\pairm{x+1=2}{x=1}
+\pairm{x+5=2}{x+3=0}
+\pairm{x+y=2}{y=2-x}
+\pairm{xy=3}{x=\frac{3}{y} \qq{($ y\neq0 $)}}
+\pairm{y=\frac{2-x}{3}}{x=2-3y}
+\pairm{xy+2y=5}{y(x+2)=5}
+\pairm{(x+1)^2=2}{x^2+2x-1=0}
+\pairm{2x-5=2}{x=\frac{7}{2}}
+\pairm{1-x=99}{x=-98}
+\end{deck}
+
+\begin{deck}{T}%unit conversions – derivative units 1
+\pairm{2\,\mathrm{\frac{m}{s}}}{7,2\,\mathrm{\frac{km}{h}}}
+\pairm{1\,\mathrm{\frac{g}{ml}}}{1\,\mathrm{\frac{kg}{\ell}}}
+\pairm{2\,\mathrm{\frac{g}{dm^3}}}{2\,\mathrm{\frac{kg}{m^3}}}
+\pairm{3\,\mathrm{\frac{kpl}{nl}}}{3\cdot10^6\,\mathrm{\frac{kpl}{ml}}}
+\pairm{10\,\mathrm{\frac{mol}{\ell}}}{10\,\mathrm{\frac{mmol}{ml}}}
+\pairm{2\,\mathrm{\frac{\upmu g}{cm^3}}}{0,002\,\mathrm{\frac{g}{\ell}}}
+\pairm{36\,\mathrm{\frac{ng}{nl}}}{36\,\mathrm{\frac{g}{dm^3}}}
+\pairm{3000\,\mathrm{\frac{kg}{ha}}}{30\,\mathrm{\frac{kg}{a}}}
+\pairm{1,2\,\mathrm{\frac{kg}{m^3}}}{1,2\,\mathrm{\frac{g}{\ell}}}
+\end{deck}
+
+%\begin{deck}{T} %electron configurations
+%\pair{\ce{Cu}}{\elconf{Cu}}
+%\pair{\ce{S}}{\elconf{S}}
+%\pair{\ce{N}}{\elconf{N}}
+%\pair{\ce{Ar}}{\elconf{Ar}}
+%\pair{\ce{Ca}}{\elconf{Ca}}
+%\pair{\ce{Li}}{\elconf{Li}}
+%\pair{\ce{He}}{\elconf{He}}
+%\pair{\ce{Cl}}{\elconf{Cl}}
+%\pair{\ce{Ag}}{\elconf{Ag}}
+%\end{deck}
+
+%\begin{deck}{R} %form an equation based on text
+%\pair{Lukujen $ a $ ja $ b $ tulo on $ 3 $.}{$ ab=3 $}
+%
+%\end{deck}
+
+
+%\begin{deck}{P}
+%\pairm{V(r)=\dfrac{4}{3}\pi r^3}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%%\pairm{v(t)=\dfrac{\Delta x}{\Delta t}}{\mathbb{R}_+ \rightarrow \mathbb{R}}
+%\pairm{v(\Delta x)=\dfrac{\Delta x}{\Delta t}}{\mathbb{R} \rightarrow \mathbb{R}}
+%%\pairm{s(t)=vt}{\mathbb{R}_+ \rightarrow \mathbb{R}}
+%%\pairm{s(v)=vt}{\mathbb{R} \rightarrow \mathbb{R}}
+%\pairm{F(m)=ma}{\mathbb{R}_+ \rightarrow \mathbb{R}}
+%\pairm{T(l)=2\pi \sqrt{\dfrac{l}{g}}  }{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{\rho(m)=\dfrac{m}{V} }{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{\rho(V)=\dfrac{m}{V}}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%%\pairm{ N(V)=\rho V g}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{ E(v)=\dfrac{1}{2}mv^2}{\mathbb{R} \rightarrow \mathbb{R}\setminus \mathbb{R}_-}
+%%\pairm{ P(t)=\dfrac{\Delta E}{t}}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{F(r)=\gamma \dfrac{m_1m_2}{r^2} }{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{ \lambda(m)=\left( R_\mathrm{H} \left(\dfrac{1}{m^2}-\dfrac{1}{n^2}\right) \right)^{-1} $\vfill$ R_\mathrm{H}>0 $\vfill$ m,n\in \mathbb{N} }{\mathbb{N} \rightarrow \mathbb{R}_+}
+%\pairm{E(m)=mc^2$ \vfill $\mathrm{c=valonnopeus}}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{T_{\frac{1}{2}}(\lambda)=\dfrac{\ln 2}{\lambda} $ \vfill $ \lambda>0}{\mathbb{R}_+ \rightarrow \mathbb{R}_+}
+%\pairm{N(t)=N_0e^{-\lambda t}$ \vfill $\lambda, N_0>0}{\mathbb{R} \rightarrow \mathbb{R}_+}
+%\pairm{f(b)=\left(\dfrac{1}{a}+\dfrac{1}{b}\right)^{-1} $\vfill$ a,b\in \mathbb{R}\setminus \lbrace 0 \rbrace}{\mathbb{R}\setminus \lbrace 0 \rbrace \rightarrow \mathbb{R} \setminus \lbrace 0 \rbrace}
+%\end{deck}
+
+%\begin{deck}{R}
+%%\pairg{y=x^3-x}{x**3-2*x}
+%%\pairg{y=x^2-3x+2}{x**2-3*x+2}
+%%\pairg{y=(x-1)(x-2)(x-3)}{(x-1)*(x-2)*(x-3)}
+%\pairg{y=x}{x}
+%\pairg{y=-\frac{1}{2}x}{-0.5*x}
+%\pairg{y=\sin(x)}{sin(x)}
+%\pairg{y=\sin(x)+1}{sin(x)+1}
+%\pairg{y=\sin(x+2)}{sin(x+2)}
+%\pairg{y=\sin(2x)}{sin(2*x)}
+%\pairg{y=2\sin(x)}{2*sin(x)}
+%%\pairg{y=\cos(x)}{cos(x)}
+%\pairg{y=\lvert x \rvert}{abs(x)}
+%\pairg{y=\lvert x +1\rvert}{abs(x+1)}
+%\end{deck}
+
+%\begin{deck}{S}
+%\pairm{$ y=\sin(x) $}{
+%	\begin{tikzpicture}
+%	\begin{axis}
+%	\addplot{sin(x)}
+%	\end{axis}
+%	\end{tikzpicture}
+%}
+%\end{deck}
+
+%function expression, domain/määrittelyehto
+%function, graph
+
+%structural formula with projection name
+%structural formula with a some property (optically active, heterocyclic, hydrocarbon, ...)
+
+%equations in power form, root form
+
+%equations in power form, logarithmic form
+
+
+%powers, roots and logarithms for purposes of using simple calculator and numeric tables
+
+
+
+%\begin{deck}{I}
+%	\pairm{\sqrt[3]{10}}{10^{0,333...}}
+%	\pairm{\lg(0,0011)}{\lg(0,11)-2}
+%	\pairm{\sqrt[5]{2}}{2^{0,2}}
+%	\pairm{2^{0,3}}{10^{0,3\lg(2)}}
+%	\pairm{\dfrac{10^7}{10^5\cdot 10^{-9}}}{10^{11}}
+%	\pairm{10^{-0,4}}{\dfrac{1}{10^{0,4}}}
+%	\pairm{\sqrt{10^{16}}}{10^8}
+%	\pairm{\sqrt{3,2\cdot 10^{15}}}{\sqrt{32}\cdot10^7}
+%	\pairm{10^{2,5}}{100\sqrt{10}}
+%	\pairm{e^{\ln(10)}}{10}
+%	\pairm{\ln(e^2)}{2}
+%	\pairm{\sqrt[4]{10}}{\sqrt{\sqrt{10}}}
+%	\pairm{\lg(11)}{\lg(0,11)+2}
+%	\pairm{e^x}{10^{x\lg e}}
+%	\pairm{e^{3,5}}{e^3\cdot \sqrt{e}}
+%	\pairm{10^{-3,5}}{\dfrac{0,001}{\sqrt{10}}}
+%	\pairm{e^{1,4}}{10^{\lg(e^{1,4})}}
+%	\pairm{\ln(2)}{\dfrac{\lg(2)}{\lg(e)}}
+%\end{deck}
+
+
+
+%%%%%chemistry!!!
+%\setbohr{insert-number=true, insert-symbol=true}
+%\begin{deck}{C2}
+%\pair{\bohr{1}{}}{\ce{H}}
+%\pair{\bohr{2}{}}{\ce{He}}
+%\pair{\bohr{3}{}}{\ce{Li}}
+%\end{deck}
+
+
+
+%\begin{deck}{K2} %names and formulas of ionic compounds
+%	\pair{ammoniumnitraatti}{\ce{NH4NO3}}
+%	\pair{kalsiumhydroksidi}{\ce{Ca(OH)2}}
+%	\pair{litiumjodidi}{\ce{LiI}}
+%	\pair{natriumvetykarbonaatti}{\ce{NaHCO3}}
+%	\pair{kalsiumsulfaatti}{\ce{CaSO4}}
+%	\pair{kalsiumsulfiitti}{\ce{CaSO3}}
+%	\pair{kaliumnitriitti}{\ce{KNO2}}
+%	\pair{kalsiumfosfaatti}{\ce{Ca3(PO4)2}}
+%	\pair{kupari(II)sulfaattipentahydraatti}{\ce{CuSO4 * 5H2O}}
+%\end{deck}
+
+%\begin{deck}{K3} %names and formulas of (mainly) molecular compounds
+%	\pair{trimetyyliamiini}{\ce{C3H9N}}
+%	\pair{bentseeni}{\ce{C6H6}}
+%	\pair{etikkahappo}{\ce{C2H4O2}}
+%	\pair{natriumasetaatti}{\ce{CH3COONa}}
+%	\pair{butanaali}{\ce{C4H8O}}
+%	\pair{glyseroli}{\ce{C3H8O3}}
+%	\pair{ammoniumsulfaatti}{\ce{(NH4)2SO4}}
+%	\pair{sykloheksaani}{\ce{C6H12}}
+%	\pair{2,2,3-trimetyyliheksaani}{\ce{C9H20}}
+%\end{deck}
+
+%\begin{deck}{K4} %reaction types: beginning substances and main product
+%	\pair{karboksyylihappo + primäärinen alkoholi}{esteri}
+%	\pair{alkoholi + alkoholi}{eetteri}
+%	\pair{alkeeni + vety}{alkaani}
+%	\pair{primäärinen amiini + karboksyylihappo}{amidi}
+%	\pair{sekundäärinen alkoholi + hapetin}{ketoni}
+%	\pair{alkyyni + pelkistin}{alkeeni}
+%	\pair{alkeeni + vesi}{alkoholi}
+%	\pair{aldehydi + hapetin}{karboksyylihappo}
+%	\pair{primäärinen alkoholi + hapetin}{aldehydi}
+%\end{deck}
+
+%\begin{deck}{K5} %some chemical groups
+%	\pair{butanaali}{aldehydi}
+%	\pair{4-aminobutaanihappo}{karboksyylihappo, amiini}
+%	\pair{glukoosi}{eetteri, alkoholi}
+%	\pair{fenyylimetanoli}{aromaattinen, alkoholi}
+%	\pair{fenoli}{aromaattinen, heikko happo}
+%	\pair{heptaani}{alkaani}
+%	\pair{\ce{CH3CH3SH}}{tioli}
+%	\pair{etyylipropanoaatti}{esteri}
+%	\pair{trikloorimetaani}{alkyylihalidi}
+%\end{deck}

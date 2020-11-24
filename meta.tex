@@ -1,15 +1,19 @@
+% !TeX root = main.tex
+%\documentclass{laakisvalmennus}
 \RequirePackage[l2tabu, orthodox]{nag}
-\documentclass[10pt]{book}
-\usepackage[utf8]{inputenc}
+\documentclass[10pt]{memoir}
+%\usepackage[utf8]{inputenc}
+%\usepackage[a4paper]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage{makeidx}
-\usepackage{fixmath}
+\usepackage{makeidx} %check
+\usepackage{fixmath} %check
 \usepackage{multicol}
 \usepackage{answers}
 \usepackage{forloop}
 \usepackage{systeme}
+%\usepackage{fourier}
 \usepackage{icomma}
 \usepackage{ifthen}
 \usepackage[pages=some]{background}
@@ -17,16 +21,34 @@
 \usepackage{graphicx}
 %\usepackage{numprint}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,arrows}
 \usepackage{upgreek}
 \usepackage[finnish]{babel}
- \usepackage{mathpazo}
-\usepackage{fouriernc}
+\usepackage{adjustbox}
+\usepackage{mathpazo}
+%\usepackage{fouriernc} %mikä tää oli
 \usepackage{microtype}
-
+%\usepackage{mhchem}
+\usepackage{chemmacros}
+\usepackage{chemfig}
+\usepackage{physics}
+\usepackage{esvect}
+\usepackage{elements}
+\usepackage{bohr}
+\setchemfig{bond join=true}
 \author{Joonas Mäkinen}
 \title{Equivalent Expressions} %titlekortti
 
-\renewcommand{\d}{\mathrm{d}}
+\renewcommand\hmmax{0}
+\renewcommand\bmmax{0}
+
+
+%\markright{moi}
+
+
+
+%todo: reunukset printtausta varten! 
 
 \Newassociation{vastaus}{Vastaus}{ans}
 
@@ -54,8 +76,20 @@
 	\huge{\begin{center}#2\end{center}}
 	\vspace*{\fill}
 
-		\tiny{#1.\arabic{expressions}} \hfill	\logo \\
+		\scalebox{0.2}{#1.\arabic{expressions}} \hfill\\
+	%		\logo \\
 	\clearpage
+%		\background	
+}
+
+\newcommand\expressionm[2]{
+	\stepcounter{expressions}
+	\vspace*{\fill}
+	\huge{\begin{center}$#2$\end{center}}
+	\vspace*{\fill}
+	\scalebox{0.2}{#1.\arabic{expressions}} \hfill\\ 
+%		\logo \\
+		\clearpage
 %		\background	
 }
 
@@ -65,12 +99,11 @@
 %	\vspace*{\fill}
 	\huge{\begin{center}
 	\begin{tikzpicture}[smooth, scale=0.45, samples=100]
-    \draw[very thin,color=gray] (-5,-5) grid (5,5);
+    \draw[help lines] (-5,-5) grid (5,5);
     \draw[->] (-5.2,0) -- (5.2,0) node[right] {\small{$x$}};
     \draw[->] (0,-5.2) -- (0,5.2) node[above] {\small{$y$}};
 	\clip (-5,-5) rectangle (5,5);
-    \draw[color=red] plot[id=x] function{#2};
-    \draw[color=red] plot[id=x] function{#2};
+    \draw[color=red, thick] plot[id=x] function{#2};
 	\end{tikzpicture}
 	\end{center}}
 	\vspace*{\fill}
@@ -80,11 +113,44 @@
 	%		\background	
 }
 
+\newcommand{\circfrac}[3][0]{
+	\adjustbox{valign=m}{\begin{tikzpicture}[rotate=#1]
+		\draw circle [radius=1cm];
+		\fill[fill=gray] (0,0) -- (1,0) arc (0:#2*360/#3:1) -- cycle;
+		\ifthenelse{#3=1}{}{
+			\foreach \x in {1,2,...,#3}
+			{        
+				\draw (0,0) -- (\x*360/#3:1);
+			}
+		}
+		\end{tikzpicture}}
+}
 
+%incomplete; is supposed to automatically draw and fill rectangles representing (true) fractions
+\newcommand{\rectfrac}[3][1]{
+	\adjustbox{valign=m}{\begin{tikzpicture}[scale=#1]
+		\draw (0,0) rectangle (1,1);
+		\draw (0,0) grid (#3,#3);
+		\fill[gray] (0,0) rectangle (#2,#2);
+		%mitäs tää nyt sit oli?
+%		\ifthenelse{#3=1}{}{ 
+%			\foreach \x in {1,2,...,#3}
+%			{        
+%				\draw (0,0) -- (\x*360/#3:1);
+%			}
+%		}
+		\end{tikzpicture}}
+}
+
+%automaattinen skaalaus kuvioille tyyliin: (ja varmaan saa adjustboksilla)
+% \resizebox{\paperheight}{\paperheight}{\begin{tikzpicture}
+%	\draw[black] (0,0) circle (3cm);
+%	\end{tikzpicture}}
 
 %minne \begin{solution} \end{solution}
 	
-\newenvironment{cards}[1]{
+\newenvironment{deck}[1]{
+
 		\newcounter{series#1}
 		\setcounter{series#1}{0}
 
@@ -96,9 +162,14 @@
 		\expression{#1}{##1}
 		\expression{#1}{##2}  
 		\addtocounter{series#1}{2}}
+	
+		\newcommand\pairm[2]{ %define outside class?
+		\expressionm{#1}{##1}
+		\expressionm{#1}{##2}  
+		\addtocounter{series#1}{2}}
 
 		\newcommand\pairg[2]{ %define outside class?
-		\expression{#1}{##1}
+		\expressionm{#1}{##1}
 		\expressiong{#1}{##2}  
 		\addtocounter{series#1}{2}}
 		
@@ -112,3 +183,9 @@
 	\addtocounter{cards}{\arabic{expressions}}
 	\setcounter{expressions}{0}
 }
+
+
+% why no wurk?
+%\makeevenfoot{plain}{moi}{}{}
+%\makeoddfoot{plain}{moi}{}{}
+%\pagestyle{plain}
